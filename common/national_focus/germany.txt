@@ -1,0 +1,301 @@
+﻿search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	FOCUS_FILTER_INDUSTRY = 509
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+focus_tree = {
+	id = german_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	default = no
+	initial_show_position = {
+		focus = GER_war_plans
+	}
+	########################################
+	# 戦車クラスター
+	# 起点: 国防軍の戦車計画 (全体基準)
+	########################################
+
+	focus = {
+		id = GER_war_plans
+		icon = GFX_goal_rhineland
+		x = 3
+		y = 0
+		cost = 5
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			custom_effect_tooltip = GER_war_plans_tt
+		}
+	}
+
+	# 左列: Pz III → 派生 → レオパルト構想
+
+	focus = {
+		id = GER_tank_III_tank_mass_production
+		icon = GFX_focus_generic_tank_production
+		cost = 5
+
+		relative_position_id = GER_war_plans
+		x = -2
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_war_plans }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_III_tank_mass_production_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_III_tank_variants
+		icon = GFX_focus_generic_self_propelled_gun
+		cost = 5
+
+		relative_position_id = GER_tank_III_tank_mass_production
+		x = -1
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_III_tank_mass_production }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_III_tank_variants_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_leopard_dev
+		icon = GFX_focus_GER_german_army_invincible
+		cost = 5
+
+		relative_position_id = GER_tank_III_tank_variants
+		x = 1
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_III_tank_mass_production focus = GER_tank_IV_tank_production }
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_leopard_dev_tt
+		}
+	}
+
+	# 中央列: Pz IV → 長砲身 → パンター → パンター改良
+
+	focus = {
+		id = GER_tank_IV_tank_production
+		icon = GFX_focus_generic_mass_production
+		cost = 5
+
+		relative_position_id = GER_war_plans
+		x = 0
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_war_plans }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_IV_tank_production_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_IV_tank_variants
+		icon = GFX_focus_HUN_establish_the_mavag_army_division
+		cost = 5
+
+		relative_position_id = GER_tank_IV_tank_production
+		x = 1
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_IV_tank_production }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_IV_tank_variants_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_panther
+		icon = GFX_focus_generic_tank_assembly
+		cost = 5
+
+		relative_position_id = GER_tank_IV_tank_production
+		x = 0
+		y = 2
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_IV_tank_production focus = GER_tank_tiger_dev }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_panther_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_panther_variants
+		icon = GFX_focus_generic_anti_tank_guns
+		cost = 5
+
+		relative_position_id = GER_tank_panther
+		x = 0
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_panther }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_panther_variants_tt
+		}
+	}
+
+	# 右列: ティーガー → ケーニヒスティーガー / 派生 → マウス
+
+	focus = {
+		id = GER_tank_tiger_dev
+		icon = GFX_focus_generic_heavy_tank
+		cost = 5
+
+		relative_position_id = GER_war_plans
+		x = 3
+		y = 2
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_war_plans }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_tiger_dev_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_ktiger
+		icon = GFX_focus_BRA_acquire_german_tanks
+		cost = 5
+
+		relative_position_id = GER_tank_tiger_dev
+		x = 2
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_tiger_dev }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_ktiger_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_tiger_variants
+		icon = GFX_focus_generic_tankette
+		cost = 5
+
+		relative_position_id = GER_tank_tiger_dev
+		x = 0
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_tiger_dev }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_tiger_variants_tt
+		}
+	}
+
+	focus = {
+		id = GER_tank_maus_dev
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5
+
+		relative_position_id = GER_tank_ktiger
+		x = 0
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_tank_ktiger }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_tank_maus_dev_tt
+		}
+	}
+
+	########################################
+	# 自動車化歩兵クラスター
+	# 戦車起点の右側に小さく配置
+	########################################
+
+	# 自動車化歩兵構想(トラック)
+	focus = {
+		id = GER_mech_motorized_infantry_plan
+		icon = GFX_focus_generic_truck
+		cost = 5
+
+		prerequisite = { focus = GER_war_plans }
+		relative_position_id = GER_war_plans
+
+		x = 5
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			custom_effect_tooltip = GER_mech_motorized_infantry_plan_tt
+		}
+	}
+
+	# 自動車化歩兵師団整備
+	focus = {
+		id = GER_mech_motorized_infantry
+		icon = GFX_goal_generic_army_motorized
+		cost = 5
+
+		relative_position_id = GER_mech_motorized_infantry_plan
+		x = 0
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_mech_motorized_infantry_plan }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_mech_motorized_infantry_tt
+		}
+	}
+
+	########################################
+	# 機械化歩兵クラスター(装甲兵員輸送車)
+########################################
+
+	# 機械化歩兵師団
+	focus = {
+		id = GER_mech_mechanized_infantry
+		icon = GFX_focus_generic_mechanized
+		cost = 5
+
+		relative_position_id = GER_mech_motorized_infantry_plan
+		x = 2
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = GER_mech_motorized_infantry_plan }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_mech_mechanized_infantry_tt
+		}
+	}
+
+	########################################
+	# 山岳猟兵クラスター(簡易)
+	########################################
+
+	# 山岳猟兵構想
+	focus = {
+		id = GER_spec_gebirgsjaeger_plan
+		icon = GFX_focus_GER_gebirgsjager
+		cost = 5
+        
+		prerequisite = { focus = GER_war_plans }
+		relative_position_id = GER_war_plans
+		x = 7
+		y = 1
+        search_filters = { FOCUS_FILTER_ARMY_XP }
+		completion_reward = {
+			custom_effect_tooltip = GER_spec_gebirgsjaeger_plan_tt
+		}
+	}
+
+}
