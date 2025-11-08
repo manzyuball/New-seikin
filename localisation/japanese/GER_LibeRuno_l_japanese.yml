@@ -19,19 +19,30 @@
  GER_spec_gebirgsjaeger_plan_desc: "山岳戦に特化した部隊である山岳猟兵は、険しい地形における機動と戦闘で他国に対する優位をもたらす。専門訓練と装備を備えた精鋭部隊を育成すべきだ。"
  GER_mech_mechanized_infantry: "Sd.Kfz.251"
  GER_mech_mechanized_infantry_desc: "装甲兵員輸送車を標準装備とする機械化歩兵師団は、戦車と歩兵の一体運用を実現し、高い生存性と火力を備えた精鋭部隊となる。"
- GER_spec_gebirgsjaeger_plan_tt: "§G山岳兵§!及びその§G編制§!をアンロックし、首都州で\n完全充足の山岳猟兵師団を§Y15師団§!徴兵する"
+
  GER_air_Luftwaffe_plan: "ルフトヴァッフェ"
  GER_air_Luftwaffe_plan_desc: "陸軍の代わりに航空戦力に注力する。"
  GER_air_me262_plan: "Me262ジェット戦闘機計画"
  GER_air_me262_plan_desc: "ジェット戦闘機Me262を実戦配備し、終戦期の制空権を確保する構想を推進する。"
-  GER_war_plans_tt: "この国家方針ツリーにおいて、戦車・山岳猟兵・航空のいずれかに国家戦力を集中させる。以後の方針選択がドイツ軍の主力編制を決定づける。"
-  GER_tank_III_tank_mass_production_tt: "III号戦車の量産体制を強化し、中戦車戦力の標準化と拡張を可能にする。後続のレオパルト構想へと繋がる基盤となる。"
-  GER_tank_leopard_dev_tt: "試作主力戦車「レオパルト」技術を解禁し、レオパルト装備の精鋭機甲師団を少数配備できるようになる。"
-  GER_tank_IV_tank_production_tt: "IV号戦車の長期量産計画を整備し、後続のパンター開発へ繋がる実戦データと工業基盤を確立する。"
-  GER_tank_panther_tt: "パンター戦車技術を解禁し、パンター装備の中戦車師団を少数配備できるようになる。"
-  GER_tank_tiger_dev_tt: "重戦車「ティーガー」技術を解禁し、限られた精鋭重戦車部隊の運用を可能にする。"
-  GER_tank_ktiger_tt: "「ケーニヒスティーガー」技術を解禁し、より強力な重戦車部隊の配備計画を推進する。"
-  GER_tank_maus_dev_tt: "超重戦車「マウス」技術を解禁し、象徴的な超重戦車師団をごく少数配備できるようになる。"
-  GER_mech_mechanized_infantry_tt: "機械化歩兵編制を解禁し、Sd.Kfz.251を装備した装甲擲弾兵師団を少数配備できるようになる。"
-  GER_air_Luftwaffe_plan_tt: "ルフトヴァッフェ計画により、先進航空研究への道が開かれる。"
-  GER_air_me262_plan_tt: "Me262ジェット戦闘機技術を解禁し、高性能ジェット迎撃戦力の整備を可能にする。"
+
+ GER_war_plans_tt: "本国家方針ツリーにより\n以後の装甲・山岳・航空各計画を解禁する。"
+ GER_spec_gebirgsjaeger_plan_tt: "§Y山岳猟兵§!を解禁し、編制に基づく§C山岳猟兵編制§!を§Y30個師団§!配備する。"
+ GER_tank_III_tank_mass_production_tt: "§YIII号戦車派生型§!を解禁し\n編制に基づく§CIII号派生型編制§!を§Yそれぞれ7個師団ずつ§!配備する。"
+
+ GER_tank_leopard_dev_tt: "§Yレオパルト§!を解禁し\n編制に基づく§Cレオパルト試験機甲師団§!を§Y10個師団§!配備する。"
+
+ GER_tank_IV_tank_production_tt: "§YIV号戦車§!とその§Y派生型§!を解禁し\n編制に基づく§CIV号戦車編制§!を§Y8個師団§!配備する。"
+
+ GER_tank_panther_tt: "§Yパンター§!とその§Y派生型§!を解禁し\n編制に基づく§Cパンター中戦車師団§!を§Y5個師団§!配備する。"
+
+ GER_tank_tiger_dev_tt: "§Yティーガー§!とその§Y派生型§!を解禁し\n編制に基づく§Cティーガー重戦車師団§!を§Y6個師団§!配備する。"
+
+ GER_tank_ktiger_tt: "§Yケーニヒスティーガー§!とその§Y派生型§!を解禁し\n編制に基づく§Cケーニヒスティーガー重戦車師団§!を§Y4個師団§!配備する。"
+
+ GER_tank_maus_dev_tt: "§Yマウス§!を解禁し\n編制に基づく§Cマウス超重戦車師団§!を§Y2個師団§!配備する。"
+
+ GER_mech_mechanized_infantry_tt: "§YSd.Kfz.251§!と§Y支援中隊の改良§!を解禁し\n編制に基づく§C装甲擲弾兵師団§!を§Y25個師団§!配備する。"
+
+ GER_air_Luftwaffe_plan_tt: "§Y改良型戦闘機§!及び§Y改良型近接航空支援機§!を解禁する。"
+
+ GER_air_me262_plan_tt: "§YMe262§!を解禁する。"
