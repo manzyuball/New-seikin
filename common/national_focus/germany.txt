@@ -303,468 +303,328 @@ focus_tree = {
 	}
 
 	########################################
-	# 空軍クラスター (陸軍クラスターの右側)
+	# 空軍クラスター (1939〜1945航空機アンロック用)
 	########################################
 
+	# 制空戦闘機系列
 	focus = {
-		id = GER_LW_foundation
-		icon = GFX_goal_generic_air_fighter
-		x = 15
+		id = GER_air_bf109_plan
+		icon = GFX_goal_generic_build_airforce
+		x = 16
 		y = 0
 		cost = 5
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_foundation_tt
+			custom_effect_tooltip = GER_air_bf109_plan_tt
 		}
 	}
 
-	# 基礎整備
-
 	focus = {
-		id = GER_LW_airfields_modernization
-		icon = GFX_goal_generic_construct_military
+		id = GER_air_fw190_plan
+		icon = GFX_goal_generic_air_fighter
 		cost = 5
 
-		relative_position_id = GER_LW_foundation
+		relative_position_id = GER_air_bf109_plan
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_foundation }
+		prerequisite = { focus = GER_air_bf109_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_airfields_modernization_tt
+			custom_effect_tooltip = GER_air_fw190_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_LW_pilot_training_program
-		icon = GFX_goal_generic_air_training
+		id = GER_air_me410_plan
+		icon = GFX_focus_generic_cas_aircraft
 		cost = 5
 
-		relative_position_id = GER_LW_airfields_modernization
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_airfields_modernization }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_LW_pilot_training_program_tt
-		}
-	}
-
-	########################################
-	# 戦闘能力重視 vs 航空支援重視
-	########################################
-
-	# 戦闘能力重視ライン
-
-	focus = {
-		id = GER_LW_fighter_supremacy
-		icon = GFX_goal_generic_air_fighter2
-		cost = 5
-
-		relative_position_id = GER_LW_pilot_training_program
+		relative_position_id = GER_air_fw190_plan
 		x = -2
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_pilot_training_program }
+		prerequisite = { focus = GER_air_fw190_plan }
+        prerequisite = { focus = GER_air_he111_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_fighter_supremacy_tt
+			custom_effect_tooltip = GER_air_me410_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_LW_jet_priority
-		icon = GFX_goal_generic_air_fighter3
+		id = GER_air_ta152_plan
+		icon = GFX_focus_IRQ_fligerfuhrer_irak
 		cost = 5
 
-		relative_position_id = GER_LW_fighter_supremacy
+		relative_position_id = GER_air_fw190_plan
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_fighter_supremacy }
+		prerequisite = { focus = GER_air_fw190_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_jet_priority_tt
+			custom_effect_tooltip = GER_air_ta152_plan_tt
 		}
 	}
 
-	# 航空支援重視ライン
-
 	focus = {
-		id = GER_LW_cas_supremacy
-		icon = GFX_goal_generic_CAS
+		id = GER_air_me262_plan
+		icon = GFX_focus_generic_jet_planes
 		cost = 5
 
-		relative_position_id = GER_LW_pilot_training_program
-		x = 2
+		relative_position_id = GER_air_ta152_plan
+		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_pilot_training_program }
+		prerequisite = { focus = GER_air_ta152_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_cas_supremacy_tt
+			custom_effect_tooltip = GER_air_me262_plan_tt
 		}
 	}
 
+	# 長距離・戦術爆撃機系列
 	focus = {
-		id = GER_LW_battlefield_interdiction
+		id = GER_air_he111_plan
 		icon = GFX_goal_generic_air_bomber
 		cost = 5
 
-		relative_position_id = GER_LW_cas_supremacy
+		relative_position_id = GER_air_bf109_plan
+		x = -3
+		y = 1
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		prerequisite = { focus = GER_air_bf109_plan }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_air_he111_plan_tt
+		}
+	}
+
+	focus = {
+		id = GER_air_ju188_plan
+		icon = GFX_focus_generic_long_range_aircraft
+		cost = 5
+
+		relative_position_id = GER_air_he111_plan
+		x = -1
+		y = 1
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		prerequisite = { focus = GER_air_he111_plan }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_air_ju188_plan_tt
+		}
+	}
+
+
+	# 近接航空支援系列
+	focus = {
+		id = GER_air_ju87d_plan
+		icon = GFX_goal_generic_CAS
+		cost = 5
+
+		relative_position_id = GER_air_bf109_plan
+		x = 2
+		y = 1
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		prerequisite = { focus = GER_air_bf109_plan }
+
+		completion_reward = {
+			custom_effect_tooltip = GER_air_ju87d_plan_tt
+		}
+	}
+
+	focus = {
+		id = GER_air_ju87g_plan
+		icon = GFX_focus_generic_armored_air_support
+		cost = 5
+
+		relative_position_id = GER_air_ju87d_plan
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_cas_supremacy }
+		prerequisite = { focus = GER_air_ju87d_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_battlefield_interdiction_tt
-		}
-	}
-
-	########################################
-	# 航続距離重視 vs コスパ重視
-	########################################
-
-	# 航続距離重視ライン
-
-	focus = {
-		id = GER_LW_long_range_ops
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 5
-
-		relative_position_id = GER_LW_pilot_training_program
-		x = -4
-		y = 1
-		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_pilot_training_program }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_LW_long_range_ops_tt
+			custom_effect_tooltip = GER_air_ju87g_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_LW_strategic_projects
-		icon = GFX_goal_generic_air_bomber2
+		id = GER_air_hs129_plan
+		icon = GFX_focus_generic_tank_air_support
 		cost = 5
 
-		relative_position_id = GER_LW_long_range_ops
+		relative_position_id = GER_air_ju87g_plan
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_long_range_ops }
+		prerequisite = { focus = GER_air_ju87g_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_strategic_projects_tt
+			custom_effect_tooltip = GER_air_hs129_plan_tt
 		}
 	}
 
-	# コスパ重視ライン
-
+	# 輸送機・降下猟兵系列
 	focus = {
-		id = GER_LW_mass_production
-		icon = GFX_goal_generic_production
+		id = GER_air_ju52_transport_plan
+		icon = GFX_focus_HUN_establish_the_mavag_aircraft_factory
 		cost = 5
 
-		relative_position_id = GER_LW_pilot_training_program
+		relative_position_id = GER_air_bf109_plan
 		x = 4
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_pilot_training_program }
+		prerequisite = { focus = GER_air_bf109_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_mass_production_tt
+			custom_effect_tooltip = GER_air_ju52_transport_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_LW_simplified_designs
-		icon = GFX_goal_generic_arms_factory
+		id = GER_air_fallschirmjager_plan
+		icon = GFX_focus_generic_paratrooper
 		cost = 5
 
-		relative_position_id = GER_LW_mass_production
+		relative_position_id = GER_air_ju52_transport_plan
 		x = 0
 		y = 1
 		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_mass_production }
+		prerequisite = { focus = GER_air_ju52_transport_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_LW_simplified_designs_tt
+			custom_effect_tooltip = GER_air_fallschirmjager_plan_tt
 		}
 	}
 
-	########################################
-	# 輸送機・降下猟兵クラスター
-	########################################
-
-	focus = {
-		id = GER_LW_transport_airfleet
-		icon = GFX_goal_generic_air_transport
-		cost = 5
-
-		relative_position_id = GER_LW_foundation
-		x = 6
-		y = 1
-		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_foundation }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_LW_transport_airfleet_tt
-		}
-	}
-
-	focus = {
-		id = GER_LW_fallschirmjager
-		icon = GFX_goal_generic_special_forces
-		cost = 5
-
-		relative_position_id = GER_LW_transport_airfleet
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_transport_airfleet }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_LW_fallschirmjager_tt
-		}
-	}
-
-	focus = {
-		id = GER_LW_air_supply_doctrine
-		icon = GFX_goal_generic_air_bomber3
-		cost = 5
-
-		relative_position_id = GER_LW_fallschirmjager
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_AIR_XP }
-		prerequisite = { focus = GER_LW_fallschirmjager }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_LW_air_supply_doctrine_tt
-		}
-	}
 
 	########################################
-	# 海軍クラスター (空軍クラスターの右側)
+	# 海軍クラスター (1939〜1945艦艇アンロック用)
 	########################################
 
+	# Z計画水上艦系列
 	focus = {
-		id = GER_KM_rearmament
-		icon = GFX_goal_generic_navy_cruiser
-		x = 27
+		id = GER_navy_bismarck_plan
+		icon = GFX_goal_generic_navy_battleship
+		x = 23
 		y = 0
 		cost = 5
 		search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_rearmament_tt
-		}
-	}
-
-	########################################
-	# Z計画ルート (戦艦・空母・巡洋艦)
-	########################################
-
-	focus = {
-		id = GER_KM_plan_z_declaration
-		icon = GFX_goal_generic_navy_battleship
-		cost = 5
-
-		relative_position_id = GER_KM_rearmament
-		x = -2
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_rearmament }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_plan_z_declaration_tt
+			custom_effect_tooltip = GER_navy_bismarck_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_KM_capital_focus
-		icon = GFX_goal_generic_navy_capital_ship
+		id = GER_navy_z_cruiser_plan
+		icon = GFX_focus_GER_high_seas_fleet
 		cost = 5
 
-		relative_position_id = GER_KM_plan_z_declaration
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_plan_z_declaration }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_capital_focus_tt
-		}
-	}
-
-	focus = {
-		id = GER_KM_carrier_development
-		icon = GFX_goal_generic_navy_carrier
-		cost = 5
-
-		relative_position_id = GER_KM_capital_focus
+		relative_position_id = GER_navy_bismarck_plan
 		x = -1
 		y = 1
 		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_capital_focus }
+		prerequisite = { focus = GER_navy_bismarck_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_carrier_development_tt
+			custom_effect_tooltip = GER_navy_z_cruiser_plan_tt
 		}
 	}
 
 	focus = {
-		id = GER_KM_fleet_air_wing
-		icon = GFX_goal_generic_air_naval_bomber2
+		id = GER_navy_graf_zeppelin_plan
+		icon = GFX_focus_GER_seeherrschaft
 		cost = 5
 
-		relative_position_id = GER_KM_carrier_development
+		relative_position_id = GER_navy_z_cruiser_plan
 		x = 0
-		y = 1
+		y = 2
 		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_carrier_development }
+		prerequisite = { focus = GER_navy_z_cruiser_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_fleet_air_wing_tt
+			custom_effect_tooltip = GER_navy_graf_zeppelin_plan_tt
 		}
 	}
 
+	# Uボート系列 (1本に集約)
 	focus = {
-		id = GER_KM_super_heavy_concept
-		icon = GFX_goal_generic_navy_battleship2
+		id = GER_navy_u_boat_all_plan
+		icon = GFX_focus_BRA_german_submarine_development
 		cost = 5
 
-		relative_position_id = GER_KM_capital_focus
+		relative_position_id = GER_navy_bismarck_plan
 		x = 1
 		y = 1
 		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_capital_focus }
+		prerequisite = { focus = GER_navy_bismarck_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_super_heavy_concept_tt
+			custom_effect_tooltip = GER_navy_u_boat_all_plan_tt
 		}
 	}
 
+	# 海兵系列 (揚陸艇NFなしで直接取得可能)
+	focus = {
+		id = GER_navy_marine_corps_plan
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5
+
+		relative_position_id = GER_navy_bismarck_plan
+		x = 3
+		y = 1
+		search_filters = { FOCUS_FILTER_NAVY_XP }
+		prerequisite = { focus = GER_navy_bismarck_plan }
+		completion_reward = {
+			custom_effect_tooltip = GER_navy_marine_corps_plan_tt
+		}
+	}
 	########################################
-	# 通商破壊ルート (潜水艦特化)
-	########################################
-
-	focus = {
-		id = GER_KM_u_boot_empire
-		icon = GFX_goal_generic_navy_submarine
-		cost = 5
-
-		relative_position_id = GER_KM_rearmament
-		x = 2
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_rearmament }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_u_boot_empire_tt
-		}
-	}
-
-	focus = {
-		id = GER_KM_wolfpack_tactics
-		icon = GFX_goal_generic_navy_submarine2
-		cost = 5
-
-		relative_position_id = GER_KM_u_boot_empire
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_u_boot_empire }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_wolfpack_tactics_tt
-		}
-	}
-
-	focus = {
-		id = GER_KM_type_xxi_program
-		icon = GFX_goal_generic_navy_submarine3
-		cost = 5
-
-		relative_position_id = GER_KM_wolfpack_tactics
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_wolfpack_tactics }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_type_xxi_program_tt
-		}
-	}
-
-	focus = {
-		id = GER_KM_atlantic_denial
-		icon = GFX_goal_generic_navy_submarine4
-		cost = 5
-
-		relative_position_id = GER_KM_type_xxi_program
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_type_xxi_program }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_atlantic_denial_tt
-		}
-	}
-
-	########################################
-	# 海兵隊(マリン)クラスター
+	# Z計画 vs Uボート 選択NF (コストと航続のトレードオフ方針用)
 	########################################
 
+	# コスト低下・航続距離低下方針 (どちらルートからでも取得可)
 	focus = {
-		id = GER_KM_marine_infanterie
-		icon = GFX_goal_generic_special_forces2
+		id = GER_navy_cost_focus_plan
+		icon = GFX_focus_generic_north_atlantic_fleet
 		cost = 5
-
-		relative_position_id = GER_KM_rearmament
-		x = 4
+        x = 1
 		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_rearmament }
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GER_navy_z_cruiser_plan
+			focus = GER_navy_u_boat_all_plan
+		}
+		relative_position_id = GER_navy_z_cruiser_plan
+		mutually_exclusive = { focus = GER_navy_range_focus_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_marine_infanterie_tt
+			custom_effect_tooltip = GER_navy_cost_focus_plan_tt
 		}
 	}
 
+	# 航続距離重視・高コスト方針 (cost = 10)
 	focus = {
-		id = GER_KM_amphibious_warfare_school
-		icon = GFX_goal_generic_navy_doctrine
-		cost = 5
-
-		relative_position_id = GER_KM_marine_infanterie
-		x = 0
+		id = GER_navy_range_focus_plan
+		icon = GFX_focus_BRA_north_and_south_america
+		x = 3
 		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_marine_infanterie }
+		cost = 10
+
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = GER_navy_z_cruiser_plan
+			focus = GER_navy_u_boat_all_plan
+		}
+		relative_position_id = GER_navy_z_cruiser_plan
+		mutually_exclusive = { focus = GER_navy_cost_focus_plan }
 
 		completion_reward = {
-			custom_effect_tooltip = GER_KM_amphibious_warfare_school_tt
+			custom_effect_tooltip = GER_navy_range_focus_plan_tt
 		}
 	}
 
-	focus = {
-		id = GER_KM_special_landing_craft
-		icon = GFX_goal_generic_navy
-		cost = 5
-
-		relative_position_id = GER_KM_amphibious_warfare_school
-		x = 0
-		y = 1
-		search_filters = { FOCUS_FILTER_NAVY_XP }
-		prerequisite = { focus = GER_KM_amphibious_warfare_school }
-
-		completion_reward = {
-			custom_effect_tooltip = GER_KM_special_landing_craft_tt
-		}
-	}
 }
