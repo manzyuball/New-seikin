@@ -46,4 +46,111 @@
  GER_mech_mechanized_infantry_tt:0 "機械化歩兵師団の編制・ボーナスが解禁される。"
  GER_spec_gebirgsjaeger_plan:0 "山岳猟兵構想"
  GER_spec_gebirgsjaeger_plan_desc:0 "山岳戦に特化した部隊である山岳猟兵は、険しい地形における機動と戦闘で他国に対する優位をもたらす。専門訓練と装備を備えた精鋭部隊を育成すべきだ。"
+  GER_LW_foundation:0 "ドイツ空軍再建計画"
+  GER_LW_foundation_desc:0 "制空権なき勝利はあり得ない。飛行場網の整備、操縦士の養成、機種体系の見直しを含む包括的な空軍再建計画を発動し、長期戦に耐えうるルフトヴァッフェを築き上げる。"
+  GER_LW_foundation_tt:0 "空軍再建計画が始動し、新たな空軍関連国家方針が解禁される。"
+
+  GER_LW_airfields_modernization:0 "航空基地近代化"
+  GER_LW_airfields_modernization_desc:0 "老朽化した飛行場設備を更新し、燃料貯蔵・整備施設・滑走路を拡充することで、大規模な航空作戦を継続可能にする。"
+  GER_LW_airfields_modernization_tt:0 "航空基地や防空インフラ整備に関するボーナスを得る。"
+
+  GER_LW_pilot_training_program:0 "操縦士養成計画"
+  GER_LW_pilot_training_program_desc:0 "厳格な訓練課程と選抜制度を導入し、熟練した戦闘機・爆撃機パイロットを継続的に輩出する体制を構築する。"
+  GER_LW_pilot_training_program_tt:0 "空軍経験値の獲得とパイロット訓練効率に関するボーナスが得られる。"
+
+  GER_LW_fighter_supremacy:0 "制空権至上主義"
+  GER_LW_fighter_supremacy_desc:0 "Bf 109やFw 190を中心とした高性能戦闘機群に投資し、敵航空戦力を叩き落とすことを最優先とする。敵に一切の空を与えない。"
+  GER_LW_fighter_supremacy_tt:0 "戦闘機研究と制空任務に関するボーナスが得られる。"
+
+  GER_LW_jet_priority:0 "ジェット機優先配備"
+  GER_LW_jet_priority_desc:0 "新時代の兵器であるジェット戦闘機の開発と配備を国家的最優先事項とし、試作機段階から運用体制を整える。"
+  GER_LW_jet_priority_tt:0 "ジェット戦闘機関連の研究・配備に大きな追い風が吹く。"
+
+  GER_LW_cas_supremacy:0 "航空支援至上主義"
+  GER_LW_cas_supremacy_desc:0 "Ju 87やHs 129などの近接航空支援機へ重点投資し、地上部隊を空から支援して敵戦線を切り裂くドクトリンを確立する。"
+  GER_LW_cas_supremacy_tt:0 "近接航空支援機の研究と地上支援任務に関するボーナスが得られる。"
+
+  GER_LW_battlefield_interdiction:0 "戦場遮断作戦"
+  GER_LW_battlefield_interdiction_desc:0 "敵後方の補給線・増援路を航空攻撃で継続的に叩き、戦場全体の主導権を掌握することを目的とした運用思想を確立する。"
+  GER_LW_battlefield_interdiction_tt:0 "地上攻撃任務と敵地上部隊への妨害効果に関するボーナスを得る。"
+
+  GER_LW_long_range_ops:0 "長距離航空作戦構想"
+  GER_LW_long_range_ops_desc:0 "遠距離護衛戦闘機と長距離爆撃機の組み合わせにより、敵本土や重要拠点を射程内に収める戦略的航空作戦能力を追求する。"
+  GER_LW_long_range_ops_tt:0 "航続距離に優れた機体や長距離任務に関するボーナスが得られる。"
+
+  GER_LW_strategic_projects:0 "長距離爆撃計画"
+  GER_LW_strategic_projects_desc:0 "He 111、Ju 88、さらには計画機Ta 400といった大型機を活用し、本格的な戦略爆撃能力の確立を目指す。"
+  GER_LW_strategic_projects_tt:0 "戦略爆撃任務と長距離爆撃機研究に関するボーナスが付与される。"
+
+  GER_LW_mass_production:0 "航空機量産体制"
+  GER_LW_mass_production_desc:0 "機種の集約と生産工程の標準化により、同一設計の航空機を大量に供給できる生産体制を構築する。"
+  GER_LW_mass_production_tt:0 "航空機生産効率とコストに関するボーナスが得られる。"
+
+  GER_LW_simplified_designs:0 "簡略設計優先"
+  GER_LW_simplified_designs_desc:0 "生産性と整備性を重視した簡略化設計を採用し、多少の性能を犠牲にしても数と運用の容易さを優先する。"
+  GER_LW_simplified_designs_tt:0 "低コスト機体の量産に適したボーナスが得られるが、一部性能低下と引き換えとなる。"
+
+  GER_LW_transport_airfleet:0 "輸送航空隊整備"
+  GER_LW_transport_airfleet_desc:0 "Ju 52やJu 352などの輸送機を体系的に整備し、兵員・補給物資・機材を空路で迅速に展開できる能力を強化する。"
+  GER_LW_transport_airfleet_tt:0 "輸送機運用と空輸能力に関するボーナスが得られる。"
+
+  GER_LW_fallschirmjager:0 "降下猟兵部隊強化"
+  GER_LW_fallschirmjager_desc:0 "空挺降下による電撃的な拠点制圧を可能とする降下猟兵部隊を増強し、専用装備と訓練体制を整える。"
+  GER_LW_fallschirmjager_tt:0 "空挺部隊運用に関するボーナスと関連編制が強化される。"
+
+  GER_LW_air_supply_doctrine:0 "空輸補給ドクトリン"
+  GER_LW_air_supply_doctrine_desc:0 "包囲下の部隊や前線拠点に対し、輸送機と滑空機を駆使した継続的な空中補給を実行するための教範を整備する。"
+  GER_LW_air_supply_doctrine_tt:0 "空中補給任務と補給維持能力に関するボーナスが得られる。"
+
+  GER_KM_rearmament:0 "海軍再軍備計画"
+  GER_KM_rearmament_desc:0 "条約制限と予算不足に縛られていたドイツ海軍を再建し、大洋で戦える艦隊を再び手に入れるための長期的な再軍備計画を始動する。"
+  GER_KM_rearmament_tt:0 "海軍再建方針が定まり、新たな海軍関連国家方針が解禁される。"
+
+  GER_KM_plan_z_declaration:0 "Z計画の宣言"
+  GER_KM_plan_z_declaration_desc:0 "戦艦・空母・巡洋艦からなる大洋艦隊を建設し、英国海軍に堂々と挑むZ計画を公式に採択する。"
+  GER_KM_plan_z_declaration_tt:0 "Z計画路線が開かれ、主力艦建造に関するボーナスを得る。"
+
+  GER_KM_capital_focus:0 "主力艦重視"
+  GER_KM_capital_focus_desc:0 "ビスマルク級や計画中の大型戦艦に重点を置き、重装甲・重火力艦艇による決戦思想を推し進める。"
+  GER_KM_capital_focus_tt:0 "戦艦・巡洋戦艦の研究や性能向上に関するボーナスが得られる。"
+
+  GER_KM_carrier_development:0 "空母建造計画"
+  GER_KM_carrier_development_desc:0 "グラーフ・ツェッペリン級をはじめとする航空母艦の建造と運用研究を進め、制空権を艦隊に持ち込む準備を整える。"
+  GER_KM_carrier_development_tt:0 "空母および艦載機運用に関するボーナスが得られる。"
+
+  GER_KM_fleet_air_wing:0 "艦隊航空戦力整備"
+  GER_KM_fleet_air_wing_desc:0 "艦隊直掩戦闘機と雷撃・爆撃隊を組織し、海戦における航空打撃力を強化する。"
+  GER_KM_fleet_air_wing_tt:0 "艦載機編制と対艦航空攻撃に関するボーナスが得られる。"
+
+  GER_KM_super_heavy_concept:0 "超大型戦艦構想"
+  GER_KM_super_heavy_concept_desc:0 "H級をはじめとする超重量級戦艦の設計に踏み込み、敵艦隊を圧倒する火力と装甲を追求する。"
+  GER_KM_super_heavy_concept_tt:0 "超大型戦艦計画が開かれるが、建造負担は非常に大きい。"
+
+  GER_KM_u_boot_empire:0 "Uボート帝国"
+  GER_KM_u_boot_empire_desc:0 "潜水艦建造に国家資源を集中し、通商破壊と封鎖戦によって敵経済を窒息させる戦略を採用する。"
+  GER_KM_u_boot_empire_tt:0 "潜水艦建造と通商破壊任務に関するボーナスが得られる。"
+
+  GER_KM_wolfpack_tactics:0 "ウルフパック戦術"
+  GER_KM_wolfpack_tactics_desc:0 "複数のUボートを連携させる群狼戦術を徹底し、輸送船団に対して組織的かつ執拗な攻撃を加える。"
+  GER_KM_wolfpack_tactics_tt:0 "通商破壊効率と夜間雷撃などに関するボーナスが得られる。"
+
+  GER_KM_type_xxi_program:0 "XXI型計画"
+  GER_KM_type_xxi_program_desc:0 "次世代潜水艦XXI型の開発を推進し、水中高速航行と長時間潜航能力を備えた真の電池潜水艦を実用化する。"
+  GER_KM_type_xxi_program_tt:0 "XXI型潜水艦関連の研究・配備に大きな恩恵をもたらす。"
+
+  GER_KM_atlantic_denial:0 "大西洋封鎖構想"
+  GER_KM_atlantic_denial_desc:0 "Uボート網と長距離哨戒によって大西洋の制海権を争い、敵の貿易航路を恒常的に脅かす体制を築く。"
+  GER_KM_atlantic_denial_tt:0 "通商破壊戦略全体に関する強力なボーナスが得られる。"
+
+  GER_KM_marine_infanterie:0 "海兵旅団創設"
+  GER_KM_marine_infanterie_desc:0 "沿岸強襲や港湾急襲に特化した海兵部隊を編成し、海軍と共同して敵岸をこじ開ける能力を獲得する。"
+  GER_KM_marine_infanterie_tt:0 "海兵隊編制および上陸戦能力に関するボーナスが得られる。"
+
+  GER_KM_amphibious_warfare_school:0 "上陸戦学校"
+  GER_KM_amphibious_warfare_school_desc:0 "専門教官と演習環境を整備し、海兵隊および陸軍部隊に対する本格的な上陸戦訓練を実施する。"
+  GER_KM_amphibious_warfare_school_tt:0 "上陸作戦計画速度や戦闘効率に関するボーナスが得られる。"
+
+  GER_KM_special_landing_craft:0 "特殊揚陸艇開発"
+  GER_KM_special_landing_craft_desc:0 "専用揚陸艇や特殊輸送艦を開発し、大量の兵力と車両を一度に浜へ上陸させる能力を強化する。"
+  GER_KM_special_landing_craft_tt:0 "上陸作戦支援装備と大量輸送能力に関するボーナスが得られる。"
  GER_spec_gebirgsjaeger_plan_tt:0 "山岳歩兵関連の研究・編制コストが軽減され、山岳戦能力が強化される。"
