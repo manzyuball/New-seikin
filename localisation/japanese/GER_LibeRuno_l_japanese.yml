@@ -1,68 +1,49 @@
-l_japanese:
- # 戦車クラスター
+﻿l_japanese:
  GER_war_plans:0 "国防軍戦車建軍計画"
  GER_war_plans_desc:0 "ドイツ陸軍の将来は、装甲戦力の体系的な整備にかかっている。戦車開発・生産・運用ドクトリンを一体として構想し、長期的な装甲戦力基盤を築き上げる。"
  GER_war_plans_tt:0 "戦車開発計画と装甲師団整備の方針が明確になり、後続の戦車関連国家方針が解禁される。"
-
  GER_tank_III_tank_mass_production:0 "Pz III量産体制"
  GER_tank_III_tank_mass_production_desc:0 "III号戦車は我が軍の中核戦車として設計されている。本格的な量産体制を確立し、標準化と生産効率の向上によって、数と質を両立させなければならない。"
  GER_tank_III_tank_mass_production_tt:0 "III号戦車系統の生産効率が向上し、装甲師団の充足が容易になる。"
-
  GER_tank_III_tank_variants:0 "Pz III発展型研究"
  GER_tank_III_tank_variants_desc:0 "III号戦車の車体と砲塔は、突撃砲、対戦車自走砲、指揮戦車など、多様な派生型に転用可能である。既存の設計を最大限活用し、柔軟な装甲戦力を整備する。"
  GER_tank_III_tank_variants_tt:0 "III号戦車を基礎とした派生装甲車両の研究と配備が容易になる。"
-
  GER_tank_leopard_dev:0 "レオパルト構想"
  GER_tank_leopard_dev_desc:0 "既存のPz III/IVの経験と戦訓を統合し、将来の主力戦車に繋がる新世代設計思想を模索する。この『レオパルト』構想は、火力・機動・防御の高度な統合を目指した長期計画である。"
  GER_tank_leopard_dev_tt:0 "高性能戦車設計への道が開かれ、終盤戦における装甲優位の素地が整う。"
-
  GER_tank_IV_tank_production:0 "Pz IV生産拡張"
  GER_tank_IV_tank_production_desc:0 "IV号戦車は多用途性と拡張性を備えた主力戦車候補である。長砲身化も見据えた生産ライン拡張により、継戦能力の高い装甲戦力を確保する。"
  GER_tank_IV_tank_production_tt:0 "IV号戦車系統の生産性が向上し、装甲部隊の質的・量的強化が可能となる。"
-
  GER_tank_IV_tank_variants:0 "長砲身型Pz IV"
  GER_tank_IV_tank_variants_desc:0 "敵戦車の装甲強化に対応するため、IV号戦車へ長砲身砲を搭載する改良が求められている。強化された貫徹力は、戦場での主導権を維持する鍵となる。"
  GER_tank_IV_tank_variants_tt:0 "長砲身IV号戦車の配備が可能となり、対戦車戦闘力が向上する。"
-
  GER_tank_panther:0 "パンター計画"
  GER_tank_panther_desc:0 "ソ連戦車の脅威に対抗するため、新しい中戦車『パンター』の開発が必要である。斜め装甲と高初速砲を備えたこの車両は、攻防ともに優れた次世代主力戦車となるだろう。"
  GER_tank_panther_tt:0 "パンター戦車の研究・生産が解禁され、装甲戦力の近代化が進む。"
-
  GER_tank_panther_variants:0 "パンター改良計画"
  GER_tank_panther_variants_desc:0 "パンターの戦訓を反映し、信頼性向上や火力強化、指揮能力向上型などの改修を重ねることで、長期運用に耐える完成度に近づけていく。"
  GER_tank_panther_variants_tt:0 "パンター系列の派生型導入により、柔軟な運用が可能になる。"
-
  GER_tank_tiger_dev:0 "ティーガー計画"
  GER_tank_tiger_dev_desc:0 "重装甲と強力な長砲身砲を備えた重戦車『ティーガー』は、敵の要塞や精鋭戦車部隊を粉砕するための切り札である。その開発は資源を要するが、得られる威圧効果は計り知れない。"
  GER_tank_tiger_dev_tt:0 "ティーガー重戦車の研究・試作計画が開始される。"
-
  GER_tank_ktiger:0 "ケーニヒスティーガー"
  GER_tank_ktiger_desc:0 "『ティーガーII』ことケーニヒスティーガーは、さらなる重装甲と強大な砲を備えた重戦車である。敵のどの戦車とも正面から撃ち合える究極の突破兵器となるだろう。"
  GER_tank_ktiger_tt:0 "ティーガーII系統の開発が可能になり、対戦車戦闘の優位性が強化される。"
-
  GER_tank_tiger_variants:0 "ティーガー運用拡張"
  GER_tank_tiger_variants_desc:0 "ティーガー系列は駆逐戦車型や指揮戦車型など、複数の派生運用が検討されている。限られた車体数を有効活用することで、戦場での存在感を最大化できる。"
  GER_tank_tiger_variants_tt:0 "ティーガー系列の派生型解禁と、その戦術的選択肢が拡大される。"
-
  GER_tank_maus_dev:0 "マウス超重戦車計画"
  GER_tank_maus_dev_desc:0 "常識を超えた重装甲と火力を追求する『マウス』計画は、実用性よりも究極兵器としての威圧力を重視した構想である。その開発は多大な負担を伴うが、成功すれば象徴的戦力となる。"
  GER_tank_maus_dev_tt:0 "マウス超重戦車計画が開放されるが、高コストと引き換えに圧倒的防御力を得る。"
-
- # 自動車化歩兵クラスター
  GER_mech_motorized_infantry_plan:0 "自動車化歩兵構想"
  GER_mech_motorized_infantry_plan_desc:0 "歩兵部隊をトラックで輸送することで、作戦機動力を飛躍的に高められる。自動車化は、現代戦に適応するための第一歩である。"
  GER_mech_motorized_infantry_plan_tt:0 "自動車化歩兵の編制と運用を促進し、移動速度と柔軟性を向上させる。"
-
  GER_mech_motorized_infantry:0 "自動車化歩兵師団整備"
  GER_mech_motorized_infantry_desc:0 "輸送トラック・支援装備・教範を整備し、自動車化歩兵師団を本格的に編成する。これにより、主力装甲部隊と連携した機動戦が可能となる。"
  GER_mech_motorized_infantry_tt:0 "自動車化歩兵師団テンプレートや関連ボーナスが解禁される。"
-
- # 機械化歩兵クラスター
  GER_mech_mechanized_infantry:0 "機械化歩兵師団"
  GER_mech_mechanized_infantry_desc:0 "装甲兵員輸送車を標準装備とする機械化歩兵師団は、戦車と歩兵の一体運用を実現し、高い生存性と火力を備えた精鋭部隊となる。"
  GER_mech_mechanized_infantry_tt:0 "機械化歩兵師団の編制・ボーナスが解禁される。"
-
- # 山岳猟兵クラスター
  GER_spec_gebirgsjaeger_plan:0 "山岳猟兵構想"
  GER_spec_gebirgsjaeger_plan_desc:0 "山岳戦に特化した部隊である山岳猟兵は、険しい地形における機動と戦闘で他国に対する優位をもたらす。専門訓練と装備を備えた精鋭部隊を育成すべきだ。"
  GER_spec_gebirgsjaeger_plan_tt:0 "山岳歩兵関連の研究・編制コストが軽減され、山岳戦能力が強化される。"

@@ -4,8 +4,8 @@
 	FOCUS_FILTER_ARMY_XP = 103
 	FOCUS_FILTER_NAVY_XP = 102
 	FOCUS_FILTER_AIR_XP = 101
-
 }
+
 focus_tree = {
 	id = german_focus
 
@@ -16,10 +16,13 @@ focus_tree = {
 			tag = GER
 		}
 	}
+
 	default = no
+
 	initial_show_position = {
 		focus = GER_war_plans
 	}
+
 	########################################
 	# 戦車クラスター
 	# 起点: 国防軍の戦車計画 (全体基準)
@@ -31,7 +34,7 @@ focus_tree = {
 		x = 3
 		y = 0
 		cost = 5
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_war_plans_tt
 		}
@@ -47,7 +50,7 @@ focus_tree = {
 		relative_position_id = GER_war_plans
 		x = -2
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_war_plans }
 
 		completion_reward = {
@@ -63,7 +66,7 @@ focus_tree = {
 		relative_position_id = GER_tank_III_tank_mass_production
 		x = -1
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_III_tank_mass_production }
 
 		completion_reward = {
@@ -79,8 +82,9 @@ focus_tree = {
 		relative_position_id = GER_tank_III_tank_variants
 		x = 1
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_III_tank_mass_production focus = GER_tank_IV_tank_production }
+
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_leopard_dev_tt
 		}
@@ -96,7 +100,7 @@ focus_tree = {
 		relative_position_id = GER_war_plans
 		x = 0
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_war_plans }
 
 		completion_reward = {
@@ -112,7 +116,7 @@ focus_tree = {
 		relative_position_id = GER_tank_IV_tank_production
 		x = 1
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_IV_tank_production }
 
 		completion_reward = {
@@ -128,7 +132,7 @@ focus_tree = {
 		relative_position_id = GER_tank_IV_tank_production
 		x = 0
 		y = 2
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_IV_tank_production focus = GER_tank_tiger_dev }
 
 		completion_reward = {
@@ -144,7 +148,7 @@ focus_tree = {
 		relative_position_id = GER_tank_panther
 		x = 0
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_panther }
 
 		completion_reward = {
@@ -162,7 +166,7 @@ focus_tree = {
 		relative_position_id = GER_war_plans
 		x = 3
 		y = 2
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_war_plans }
 
 		completion_reward = {
@@ -178,7 +182,7 @@ focus_tree = {
 		relative_position_id = GER_tank_tiger_dev
 		x = 2
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_tiger_dev }
 
 		completion_reward = {
@@ -194,7 +198,7 @@ focus_tree = {
 		relative_position_id = GER_tank_tiger_dev
 		x = 0
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_tiger_dev }
 
 		completion_reward = {
@@ -210,7 +214,7 @@ focus_tree = {
 		relative_position_id = GER_tank_ktiger
 		x = 0
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_tank_ktiger }
 
 		completion_reward = {
@@ -234,7 +238,7 @@ focus_tree = {
 
 		x = 5
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_mech_motorized_infantry_plan_tt
 		}
@@ -249,7 +253,7 @@ focus_tree = {
 		relative_position_id = GER_mech_motorized_infantry_plan
 		x = 0
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_mech_motorized_infantry_plan }
 
 		completion_reward = {
@@ -259,7 +263,7 @@ focus_tree = {
 
 	########################################
 	# 機械化歩兵クラスター(装甲兵員輸送車)
-########################################
+	########################################
 
 	# 機械化歩兵師団
 	focus = {
@@ -270,7 +274,7 @@ focus_tree = {
 		relative_position_id = GER_mech_motorized_infantry_plan
 		x = 2
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		prerequisite = { focus = GER_mech_motorized_infantry_plan }
 
 		completion_reward = {
@@ -287,15 +291,14 @@ focus_tree = {
 		id = GER_spec_gebirgsjaeger_plan
 		icon = GFX_focus_GER_gebirgsjager
 		cost = 5
-        
+
 		prerequisite = { focus = GER_war_plans }
 		relative_position_id = GER_war_plans
 		x = 7
 		y = 1
-        search_filters = { FOCUS_FILTER_ARMY_XP }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_spec_gebirgsjaeger_plan_tt
 		}
 	}
-
 }
