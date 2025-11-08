@@ -291,7 +291,11 @@ focus_tree = {
 		id = GER_spec_gebirgsjaeger_plan
 		icon = GFX_focus_GER_gebirgsjager
 		cost = 5
-
+        available = {
+			capital_scope = {
+				is_owned_and_controlled_by = ROOT
+			}
+		}
 		prerequisite = { focus = GER_war_plans }
 		relative_position_id = GER_war_plans
 		x = 7
@@ -299,6 +303,33 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_spec_gebirgsjaeger_plan_tt
+			division_template = {
+                name = "山岳猟兵編制"
+                is_locked = no
+                priority = 0
+                regiments = {
+                    mountaineers = { x = 0 y = 0 }
+                    mountaineers = { x = 1 y = 0 }
+                    artillery_brigade = { x = 2 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+                    mountaineers = { x = 1 y = 1 }
+                    artillery_brigade = { x = 2 y = 1 }
+                }
+                support = {
+                   anti_air = { x = 0 y = 1 }
+				   logistics_company = { x = 0 y = 2 }
+				   engineer = { x = 0 y = 3 }
+                }
+            }
+			capital_scope = {
+				create_unit = {
+                division = "name = \"山岳猟兵\" division_template = \"山岳猟兵編制\" force_equipment_variants = { medium_tank_chassis_2 = { owner = \"GER\"} }"
+                    owner = ROOT
+                    count = 15
+                    allow_spawning_on_enemy_provs = no
+				}
+			}
+
 		}
 	}
 
@@ -600,7 +631,7 @@ focus_tree = {
 		}
 		relative_position_id = GER_navy_z_cruiser_plan
 		mutually_exclusive = { focus = GER_navy_range_focus_plan }
-
+        search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_navy_cost_focus_plan_tt
 		}
@@ -621,7 +652,7 @@ focus_tree = {
 		}
 		relative_position_id = GER_navy_z_cruiser_plan
 		mutually_exclusive = { focus = GER_navy_cost_focus_plan }
-
+        search_filters = { FOCUS_FILTER_NAVY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_navy_range_focus_plan_tt
 		}
