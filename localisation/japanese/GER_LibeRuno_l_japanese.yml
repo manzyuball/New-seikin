@@ -19,7 +19,7 @@
  GER_spec_gebirgsjaeger_plan_desc: "山岳戦に特化した部隊である山岳猟兵は、険しい地形における機動と戦闘で他国に対する優位をもたらす。専門訓練と装備を備えた精鋭部隊を育成すべきだ。"
  GER_mech_mechanized_infantry: "Sd.Kfz.251"
  GER_mech_mechanized_infantry_desc: "装甲兵員輸送車を標準装備とする機械化歩兵師団は、戦車と歩兵の一体運用を実現し、高い生存性と火力を備えた精鋭部隊となる。"
- GER_spec_gebirgsjaeger_plan_tt: "山岳兵及びその編制をアンロックし、首都州で完全充足の山岳猟兵師団を15師団徴兵する"
+ GER_spec_gebirgsjaeger_plan_tt: "§G山岳兵§!及びその§G編制§!をアンロックし、首都州で\n完全充足の山岳猟兵師団を§Y15師団§!徴兵する"
  GER_air_Luftwaffe_plan: "ルフトヴァッフェ"
  GER_air_Luftwaffe_plan_desc: "陸軍の代わりに航空戦力に注力する。"
  GER_air_me262_plan: "Me262ジェット戦闘機計画"
