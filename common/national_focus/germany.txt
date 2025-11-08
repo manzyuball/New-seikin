@@ -176,7 +176,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"レオパルト試験機甲師団\" division_template = \"レオパルト試験機甲師団\" start_experience_factor = 0.3"
 						owner = GER
-						count = 20
+						count = 10
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -202,6 +202,41 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_air_Luftwaffe_plan }
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_IV_tank_production_tt
+			set_technology = {
+				improved_medium_tank = 1
+				improved_medium_td = 1
+				improved_medium_art = 1
+				improved_medium_spaa = 1
+			}
+			hidden_effect = {
+				# パンター中戦車師団 用テンプレート解禁＋スポーン
+				division_template = {
+					name = "IV号戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						motorized = { x = 2 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						mot_recon = { x = 0 y = 1 }
+						maintenance_company = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"IV号戦車師団\" division_template = \"IV号戦車師団\" start_experience_factor = 0.3"
+						owner = GER
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
 		}
 	}
 
@@ -218,6 +253,12 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_panther_tt
+			set_technology = {
+				advanced_medium_tank = 1
+				advanced_medium_td = 1
+				advanced_medium_art = 1
+				advanced_medium_spaa = 1
+			}
 			hidden_effect = {
 				# パンター中戦車師団 用テンプレート解禁＋スポーン
 				division_template = {
@@ -234,15 +275,15 @@ focus_tree = {
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 1 }
 						maintenance_company = { x = 0 y = 2 }
 					}
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"パンター中戦車師団\" division_template = \"パンター中戦車師団\" start_experience_factor = 0.6"
+						division = "name = \"パンター中戦車師団\" division_template = \"パンター中戦車師団\" start_experience_factor = 0.3"
 						owner = GER
-						count = 2
+						count = 5
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -268,9 +309,52 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_tank_IV_tank_production }
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_tiger_dev_tt
+			set_technology = {
+				improved_heavy_tank = 1
+				improved_heavy_td = 1
+				improved_heavy_art = 1
+				improved_heavy_spaa = 1
+			}
 			hidden_effect = {
-				# ティーガー重戦車技術はバニラ tech: heavy_tank2 (例) を前提とし、
-				# NFでは追加バフを与えず「ルート選択の物語付け」とする。
+				division_template = {
+					name = "ティガー師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 1 y = 1 }
+						mechanized = {
+							x = 2
+							y = 0
+						}
+					    mechanized = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						logistics_company = { x = 0 y = 1 }
+						signal_company = {
+							x = 0
+							y = 2
+						}
+						maintenance_company = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"ティガー師団\" division_template = \"ティガー師団\" start_experience_factor = 0.3"
+						owner = GER
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
 			}
 		}
 	}
@@ -287,9 +371,53 @@ focus_tree = {
 		prerequisite = { focus = GER_tank_tiger_dev }
 
 		completion_reward = {
+			set_technology = {
+				advanced_heavy_tank = 1
+				advanced_heavy_td = 1
+				advanced_heavy_art = 1
+				advanced_heavy_spaa = 1
+			}
 			custom_effect_tooltip = GER_tank_ktiger_tt
 			hidden_effect = {
-				# ケーニヒスティーガー技術もバニラ heavy_tank3 等に紐付け、追加の技術付与は行わない。
+				division_template = {
+					name = "ケー二ヒスティガー師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 1 y = 1 }
+						mechanized = {
+							x = 2
+							y = 0
+						}
+					    mechanized = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						logistics_company = { x = 0 y = 1 }
+						signal_company = {
+							x = 0
+							y = 2
+						}
+						maintenance_company = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"ケー二ヒスティガー師団\" division_template = \"ケー二ヒスティガー師団\" start_experience_factor = 0.3"
+						owner = GER
+						count = 4
+						allow_spawning_on_enemy_provs = no
+					}
+				}
 			}
 		}
 	}
@@ -308,8 +436,11 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_tank_maus_dev_tt
+			set_technology = {
+				super_heavy_tank = 1
+			}
 			hidden_effect = {
-				# マウス超重戦車師団 用テンプレート解禁＋スポーン
+				
 				division_template = {
 					name = "マウス超重戦車師団"
 					is_locked = no
@@ -319,17 +450,33 @@ focus_tree = {
 						super_heavy_armor = { x = 1 y = 0 }
 						super_heavy_armor = { x = 0 y = 1 }
 						super_heavy_armor = { x = 1 y = 1 }
+						mechanized = {
+							x = 2
+							y = 0
+						}
+					    mechanized = {
+							x = 2
+							y = 1
+						}
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
 						logistics_company = { x = 0 y = 1 }
+						signal_company = {
+							x = 0
+							y = 2
+						}
+						maintenance_company = {
+							x = 0
+							y = 3
+						}
 					}
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"マウス超重戦車師団\" division_template = \"マウス超重戦車師団\" start_experience_factor = 0.7"
+						division = "name = \"マウス超重戦車師団\" division_template = \"マウス超重戦車師団\" start_experience_factor = 0.3"
 						owner = GER
-						count = 1
+						count = 2
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -338,7 +485,7 @@ focus_tree = {
 	}
 
 	########################################
-	# 機械化歩兵クラスター(装甲兵員輸送車)
+	# 機械化歩兵
 	########################################
 
 	# 機械化歩兵師団
@@ -355,6 +502,16 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_mech_mechanized_infantry_tt
+			set_technology = {
+				mechanised_infantry2 = 1
+				tech_engineers3 = 1
+				tech_recon3 = 1
+				tech_logistics_company3 = 1
+				tech_field_hospital3 = 1
+				tech_maintenance_company3 = 1
+				tech_signal_company3 = 1
+				tech_military_police3 = 1
+			}
 			hidden_effect = {
 				# 装甲擲弾兵師団 用テンプレート解禁＋スポーン
 				division_template = {
@@ -362,25 +519,22 @@ focus_tree = {
 					is_locked = no
 					priority = 1
 					regiments = {
-						motorized = { x = 0 y = 0 }
-						motorized = { x = 1 y = 0 }
-						motorized = { x = 2 y = 0 }
-						motorized = { x = 0 y = 1 }
-						motorized = { x = 1 y = 1 }
-						motorized = { x = 2 y = 1 }
-						motorized = { x = 0 y = 2 }
-						motorized = { x = 1 y = 2 }
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 2 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 1 y = 1 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
-						recon = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 1 }
 					}
 				}
 				capital_scope = {
 					create_unit = {
-						division = "name = \"装甲擲弾兵師団\" division_template = \"装甲擲弾兵師団\" start_experience_factor = 0.6"
+						division = "name = \"装甲擲弾兵師団\" division_template = \"装甲擲弾兵師団\" start_experience_factor = 0.3"
 						owner = GER
-						count = 2
+						count = 30
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -389,10 +543,9 @@ focus_tree = {
 	}
 
 	########################################
-	# 山岳猟兵クラスター(簡易)
+	# 山岳猟兵
 	########################################
 
-	# 山岳猟兵構想
 	focus = {
 		id = GER_spec_gebirgsjaeger_plan
 		icon = GFX_focus_GER_gebirgsjager
@@ -413,6 +566,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_XP }
 		completion_reward = {
 			custom_effect_tooltip = GER_spec_gebirgsjaeger_plan_tt
+			set_technology = {
+				tech_mountaineers = 1
+				advanced_infantry_weapons = 1
+			}
 			hidden_effect = {
 				division_template = {
 					name = "山岳猟兵編制"
@@ -436,7 +593,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"山岳猟兵\" division_template = \"山岳猟兵編制\" start_experience_factor = 0.5"
 						owner = GER
-						count = 3
+						count = 30
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -462,6 +619,11 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_tank_IV_tank_production }
 		completion_reward = {
 			custom_effect_tooltip = GER_air_Luftwaffe_plan_tt
+			set_technology = {
+				fighter2 = 1
+				CAS2 = 1
+				paratroopers = 1
+			}
 		}
 	}
 
@@ -478,9 +640,9 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = GER_air_me262_plan_tt
-			# 航空は技術解放のみとする場合、バニラのジェット戦闘機技術IDをここで直接付与することを推奨。
-			# 下記のように hidden_effect を使わず、completion_reward 直下で add_technology を記述すると検証エラーを避けられます:
-			# add_technology = jet_fighter1
+			set_technology = {
+				jet_fighter1 = 1
+			}
 		}
 	}
 
