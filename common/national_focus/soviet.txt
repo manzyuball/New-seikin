@@ -1,0 +1,524 @@
+﻿search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	FOCUS_FILTER_INDUSTRY = 509
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+}
+
+focus_tree = {
+	id = soviet_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+
+	default = no
+
+	initial_show_position = {
+		focus = SOV_red_army_armor_plan
+	}
+
+	########################################
+	# 中央起点：赤軍装甲計画
+	########################################
+
+	focus = {
+		id = SOV_red_army_armor_plan
+		icon = GFX_goal_generic_army_doctrines
+		x = 5
+		y = 0
+		cost = 0
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_red_army_armor_plan_tt
+		}
+	}
+
+	########################################
+	# T-34中戦車量産ルート
+	########################################
+
+	focus = {
+		id = SOV_T34_mass_production
+		icon = GFX_focus_generic_tank_production
+		cost = 0
+
+		relative_position_id = SOV_red_army_armor_plan
+		x = -5
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+
+		prerequisite = { focus = SOV_red_army_armor_plan }
+
+		# 他4ルートと相互排他
+		mutually_exclusive = { focus = SOV_KV_IS_breakthrough }
+		mutually_exclusive = { focus = SOV_artillery_katyusha_firepower }
+		mutually_exclusive = { focus = SOV_guard_mech_deep_battle }
+		mutually_exclusive = { focus = SOV_red_airforce_modernization }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_T34_mass_production_tt
+
+			hidden_effect = {
+				set_technology = {
+					improved_medium_tank = 1
+				}
+
+				division_template = {
+					name = "T-34戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						motorized = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						mot_recon = { x = 0 y = 1 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"T-34戦車師団\" division_template = \"T-34戦車師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_T34_mass_production_expand
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		cost = 24
+
+		relative_position_id = SOV_T34_mass_production
+		x = 0
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_T34_mass_production }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_T34_mass_production_expand_tt
+
+			hidden_effect = {
+				# 2枚目はとにかく数で押す
+				capital_scope = {
+					create_unit = {
+						division = "name = \"T-34戦車師団\" division_template = \"T-34戦車師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 24
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	########################################
+	# KV/IS重戦車突破ルート
+	########################################
+
+	focus = {
+		id = SOV_KV_IS_breakthrough
+		icon = GFX_focus_FIN_salvaged_and_retooled
+		cost = 0
+
+		relative_position_id = SOV_red_army_armor_plan
+		x = -3
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_red_army_armor_plan }
+
+		mutually_exclusive = { focus = SOV_T34_mass_production }
+		mutually_exclusive = { focus = SOV_artillery_katyusha_firepower }
+		mutually_exclusive = { focus = SOV_guard_mech_deep_battle }
+		mutually_exclusive = { focus = SOV_red_airforce_modernization }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_KV_IS_breakthrough_tt
+
+			hidden_effect = {
+				set_technology = {
+					improved_heavy_tank = 1
+					improved_heavy_art = 1
+				}
+
+				division_template = {
+					name = "KV重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_sp_artillery_brigade = { x = 1 y = 0 }
+						motorized = { x = 2 y = 0 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"KV重戦車師団\" division_template = \"KV重戦車師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 4
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_IS_breakthrough_elite
+		icon = GFX_focus_SOV_father_of_nations
+		cost = 30
+
+		relative_position_id = SOV_KV_IS_breakthrough
+		x = 0
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_KV_IS_breakthrough }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_IS_breakthrough_elite_tt
+
+			hidden_effect = {
+				set_technology = {
+					advanced_heavy_tank = 1
+				}
+
+				division_template = {
+					name = "親衛重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 2 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						logistics_company = { x = 0 y = 1 }
+						maintenance_company = { x = 0 y = 2 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"親衛重戦車師団\" division_template = \"親衛重戦車師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	########################################
+	# 砲兵＋カチューシャ火力ルート
+	########################################
+
+	focus = {
+		id = SOV_artillery_katyusha_firepower
+		icon = GFX_goal_generic_army_artillery2
+		cost = 0
+
+		relative_position_id = SOV_red_army_armor_plan
+		x = -1
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_red_army_armor_plan }
+
+		mutually_exclusive = { focus = SOV_T34_mass_production }
+		mutually_exclusive = { focus = SOV_KV_IS_breakthrough }
+		mutually_exclusive = { focus = SOV_guard_mech_deep_battle }
+		mutually_exclusive = { focus = SOV_red_airforce_modernization }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_artillery_katyusha_firepower_tt
+
+			hidden_effect = {
+				set_technology = {
+					artillery2 = 1
+					antitank2 = 1
+				}
+
+				division_template = {
+					name = "赤軍砲兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						artillery_brigade = { x = 0 y = 1 }
+						artillery_brigade = { x = 1 y = 1 }
+						anti_tank = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"赤軍砲兵師団\" division_template = \"赤軍砲兵師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 16
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_katyusha_guard_rocket
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 24
+
+		relative_position_id = SOV_artillery_katyusha_firepower
+		x = 0
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_artillery_katyusha_firepower }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_katyusha_guard_rocket_tt
+
+			hidden_effect = {
+				set_technology = {
+					rocket_artillery = 1
+				}
+
+				division_template = {
+					name = "カチューシャ師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						mot_rocket_artillery_brigade = { x = 0 y = 0 }
+						mot_rocket_artillery_brigade = { x = 1 y = 0 }
+						mot_rocket_artillery_brigade = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"カチューシャ師団\" division_template = \"カチューシャ師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	########################################
+	# ガード機械化・縦深戦ルート
+	########################################
+
+	focus = {
+		id = SOV_guard_mech_deep_battle
+		icon = GFX_focus_SOV_builder_of_the_red_army
+		cost = 0
+
+		relative_position_id = SOV_red_army_armor_plan
+		x = 1
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_red_army_armor_plan }
+
+		mutually_exclusive = { focus = SOV_T34_mass_production }
+		mutually_exclusive = { focus = SOV_KV_IS_breakthrough }
+		mutually_exclusive = { focus = SOV_artillery_katyusha_firepower }
+		mutually_exclusive = { focus = SOV_red_airforce_modernization }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_guard_mech_deep_battle_tt
+
+			hidden_effect = {
+				set_technology = {
+					advanced_infantry_weapons = 1
+				}
+
+				division_template = {
+					name = "モスクワ親衛師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						artillery_brigade = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"モスクワ親衛師団\" division_template = \"モスクワ親衛師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_guard_mech_deep_battle_elite
+		icon = GFX_focus_SOV_the_road_of_life
+		cost = 30
+
+		relative_position_id = SOV_guard_mech_deep_battle
+		x = 0
+		y = 1
+
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		prerequisite = { focus = SOV_guard_mech_deep_battle }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_guard_mech_deep_battle_elite_tt
+
+			hidden_effect = {
+				set_technology = {
+					mechanised_infantry2 = 1
+				}
+
+				division_template = {
+					name = "親衛機械化師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 1 y = 1 }
+						medium_armor = { x = 2 y = 0 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						mot_recon = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+					}
+				}
+
+				capital_scope = {
+					create_unit = {
+						division = "name = \"親衛機械化師団\" division_template = \"親衛機械化師団\" start_experience_factor = 0.3"
+						owner = SOV
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	########################################
+	# 赤色空軍近代化ルート
+	########################################
+
+	focus = {
+		id = SOV_red_airforce_modernization
+		icon = GFX_focus_SOV_flying_clubs
+		cost = 0
+
+		relative_position_id = SOV_red_army_armor_plan
+		x = 3
+		y = 1
+
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		prerequisite = { focus = SOV_red_army_armor_plan }
+
+		mutually_exclusive = { focus = SOV_T34_mass_production }
+		mutually_exclusive = { focus = SOV_KV_IS_breakthrough }
+		mutually_exclusive = { focus = SOV_artillery_katyusha_firepower }
+		mutually_exclusive = { focus = SOV_guard_mech_deep_battle }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_red_airforce_modernization_tt
+
+			hidden_effect = {
+				set_technology = {
+					fighter2 = 1
+					CAS2 = 1
+				}
+				# capital_scope = {
+				# 	create_wing = {
+				# 		owner = SOV
+				# 		size = 200
+				# 		archetype = fighter
+				# 	}
+				# 	create_wing = {
+				# 		owner = SOV
+				# 		size = 200
+				# 		archetype = CAS
+				# 	}
+				# }
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_air_support_integration
+		icon = GFX_focus_SOV_women_in_aviation
+		cost = 30
+
+		relative_position_id = SOV_red_airforce_modernization
+		x = 0
+		y = 1
+
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		prerequisite = { focus = SOV_red_airforce_modernization }
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_air_support_integration_tt
+
+			hidden_effect = {
+				set_technology = {
+					fighter3 = 1
+					CAS3 = 1
+				}
+			}
+		}
+	}
+}

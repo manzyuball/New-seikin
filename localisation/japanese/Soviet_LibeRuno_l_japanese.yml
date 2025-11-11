@@ -1,0 +1,50 @@
+﻿l_japanese:
+  # 中央起点
+  SOV_red_army_armor_plan: "赤軍装甲計画"
+  SOV_red_army_armor_plan_desc: "独ソ戦を見据え、赤軍の機甲戦力と支援兵科を体系的に再編する。中戦車、重戦車、砲兵、機械化、航空──いずれかの重点構想を選択し、大戦期ソ連軍の強みを最大限に引き出さなければならない。"
+  SOV_red_army_armor_plan_tt: "以下の5つの専門計画方針を解禁する：\n§YT-34中戦車ルート§!/§YKV・IS重戦車ルート§!/§Y砲兵・カチューシャルート§!/§Y縦深戦ルート§!/§Y赤色空軍ルート§!。\nいずれか1ルートのみ選択可能。"
+
+  # T-34中戦車量産ルート
+  SOV_T34_mass_production: "T-34中戦車"
+  SOV_T34_mass_production_desc: "T-34は火力、防御力、機動力のいずれにも優れた中戦車であり、大量生産に適した構造を有している。この車輌を標準戦車として集中的に整備し、機甲戦力の主柱とする。"
+  SOV_T34_mass_production_tt: "§YT-34§!系中戦車の運用を前倒しで整備し、編制に基づく§CT-34戦車師団§!を§Y8個師団§!配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+
+  SOV_T34_mass_production_expand: "T-34大規模戦線展開"
+  SOV_T34_mass_production_expand_desc: "既存の量産体制をさらに拡張し、赤軍の各戦線にT-34戦車師団を集中的に投入する。質ではなく数で戦局を圧倒する構想である。"
+  SOV_T34_mass_production_expand_tt: "編制に基づく§CT-34戦車師団§!を追加で§Y24個師団§!配備する。\nこれにより中戦車戦力は圧倒的物量となるが、他の兵科強化計画を犠牲にする。"
+
+  # KV/IS重戦車突破ルート
+  SOV_KV_IS_breakthrough: "KV戦車"
+  SOV_KV_IS_breakthrough_desc: "KV重戦車は堅牢な装甲と重火力を備え、敵防衛線の正面突破に適している。維持負担は大きいが、要所に集中運用することで敵戦線を粉砕できる。"
+  SOV_KV_IS_breakthrough_tt: "§YKV系重戦車§!を前倒しで整備し、編制に基づく§CKV重戦車師団§!を§Y4個師団§!配備する。"
+
+  SOV_IS_breakthrough_elite: "IS戦車"
+  SOV_IS_breakthrough_elite_desc: "発展型重戦車IS系を中核とする親衛重戦車師団を編成し、最重要戦域での装甲突破任務を一手に担わせる。質を極限まで追求したエリート装甲戦力である。"
+  SOV_IS_breakthrough_elite_tt: "§YIS系重戦車§!を解禁し、編制に基づく§C親衛重戦車§!を§Y6個師団§!配備する。\n高コストだが、対戦車戦と要塞突破において圧倒的戦果を期待できる。"
+
+  # 砲兵+カチューシャ火力ルート
+  SOV_artillery_katyusha_firepower: "赤軍砲兵"
+  SOV_artillery_katyusha_firepower_desc: "旧来の火砲運用を見直し、榴弾砲および対戦車砲を体系的に近代化することで、歩兵師団の火力と防御力を飛躍的に高める。"
+  SOV_artillery_katyusha_firepower_tt: "改良型§Y火砲§!および§Y対戦車砲§!を整備し、編制に基づく§C赤軍砲兵支援師団§!を§Y16個師団§!配備する。\n装甲戦力ではなく、歩兵+砲兵の総合火力で戦線を支える選択肢となる。"
+
+  SOV_katyusha_guard_rocket: "カチューシャ"
+  SOV_katyusha_guard_rocket_desc: "多連装ロケット砲『カチューシャ』を親衛部隊として集中運用し、敵集団および拠点に対する面制圧射撃能力を極大化する。"
+  SOV_katyusha_guard_rocket_tt: "§Yカチューシャ§!を解禁し、編制に基づく§Cカチューシャ師団§!を§Y8個師団§!配備する。\n機動力と、一撃の面火力に特化した運用となる。"
+
+  # ガード機械化・縦深戦ルート
+  SOV_guard_mech_deep_battle: "親衛狙撃兵師団再編"
+  SOV_guard_mech_deep_battle_desc: "戦功ある部隊を親衛狙撃兵として再編成し、装備と訓練を優先的に配分することで、信頼性の高い精鋭歩兵戦力を構築する。"
+  SOV_guard_mech_deep_battle_tt: "改良歩兵装備を整備し、編制に基づく§C親衛狙撃兵師団§!を§Y12個師団§!配備する。\n堅実な精鋭歩兵戦力によって戦線の骨格を強化する。"
+
+  SOV_guard_mech_deep_battle_elite: "縦深機械化"
+  SOV_guard_mech_deep_battle_elite_desc: "機械化歩兵と中戦車を統合した親衛機械化師団を中核とし、縦深戦構想に基づく連続攻勢能力を獲得する。"
+  SOV_guard_mech_deep_battle_elite_tt: "§Y機械化歩兵§!を本格運用し、編制に基づく§C親衛機械化縦深師団§!を§Y8個師団§!配備する。\n広正面での機動防御と反攻を重視する。"
+
+  # 赤色空軍近代化ルート
+  SOV_red_airforce_modernization: "赤色空軍"
+  SOV_red_airforce_modernization_desc: "Yak・La戦闘機およびIl-2攻撃機を中心とした近代航空戦力を整備し、制空権と前線支援能力を強化する。装甲計画との両立は困難であるため、航空への集中投資を明確に選択しなければならない。"
+  SOV_red_airforce_modernization_tt: "§Y改良型戦闘機§!および§Y改良型近接航空支援機§!をアンロックする。\n他の地上戦力強化計画の代わりに、航空優勢と対地支援を重視する路線となる。"
+
+  SOV_air_support_integration: "前線航空支援統合"
+  SOV_air_support_integration_desc: "迎撃戦闘機と攻撃機の運用を統合し、前線軍と空軍司令部の連携を強化することで、防空と地上支援の即応性を高める。"
+  SOV_air_support_integration_tt: "§Y発展型戦闘機§!および§Y発展型近接航空支援機§!をアンロックする。\n地上部隊への直接的な増強は行わないが、航空面での安定した支援が可能となる。"

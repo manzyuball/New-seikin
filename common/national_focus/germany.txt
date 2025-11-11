@@ -23,10 +23,6 @@ focus_tree = {
 		focus = GER_war_plans
 	}
 
-	########################################
-	# 戦車クラスター
-	# 起点: 国防軍の戦車計画 (全体基準)
-	########################################
 
 	focus = {
 		id = GER_war_plans
@@ -39,8 +35,6 @@ focus_tree = {
 			custom_effect_tooltip = GER_war_plans_tt
 		}
 	}
-
-	# 左列: Pz III → 派生 → レオパルト構想
 
 	focus = {
 		id = GER_tank_III_tank_mass_production
@@ -186,7 +180,7 @@ focus_tree = {
 		}
 	}
 
-	# 中央列: Pz IV → 長砲身 → パンター → パンター改良
+	#
 
 	focus = {
 		id = GER_tank_IV_tank_production
@@ -293,7 +287,7 @@ focus_tree = {
 		}
 	}
 
-	# 右列: ティーガー → ケーニヒスティーガー / 派生 → マウス
+	# 
 
 	focus = {
 		id = GER_tank_tiger_dev
@@ -497,7 +491,7 @@ focus_tree = {
 	# 機械化歩兵
 	########################################
 
-	# 機械化歩兵師団
+	# 
 	focus = {
 		id = GER_mech_mechanized_infantry
 		icon = GFX_focus_generic_mechanized
