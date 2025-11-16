@@ -1,0 +1,35 @@
+﻿l_japanese:
+  # 共通ニュース（史料由来の抄訳）
+  LR_news_barbarossa_prelude_title: "東方に迫る影"
+  LR_news_barbarossa_prelude_desc: "【独紙論説 抄訳】「東方における国防軍の展開は、欧州の秩序と安全を確保するための防衛的措置にほかならない」──そう強調する一方で、国境地帯への部隊移動と物資輸送の増加は、観測筋に重い疑念を抱かせていた。"
+  LR_news_barbarossa_prelude_option: "「世界は静観している。」\n[効果] このイベント自体に効果はない。"
+
+  # ドイツ側1：バルバロッサ計画最終確認（指導部発言 抄訳）
+  LR_GER_barbarossa_plan_title: "「バルバロッサ」構想の確定"
+  LR_GER_barbarossa_plan_desc: "【独指導部会議発言 抄訳】「ソビエトは、いずれ我々の側背を脅かす存在となる。問題は、彼らが強大になる前に行動できるかどうかだ。」東方への攻勢構想は、この論理のもとに最終的な承認を与えられた。"
+  LR_GER_barbarossa_plan_option: "「東方の扉を叩く時が来た。」\n[効果] このイベント自体に効果はない。"
+
+  # ドイツ側2：バルバロッサ命令発令（作戦命令 抄訳）
+  LR_GER_barbarossa_order_title: "作戦命令「バルバロッサ」"
+  LR_GER_barbarossa_order_desc: "【国防軍最高司令部作戦指令 抄訳】「全軍は指定期日までに攻勢準備を完成し、北方・中央・南方の各方向において電撃的攻撃をもって赤軍主力を撃滅すべし。」封印された命令文は、静かに各軍集団へと配られていった。"
+  LR_GER_barbarossa_order_option: "[効果] このイベント自体に効果はない。"
+
+  # ドイツ側3：対ソ開戦宣言（演説 抄訳）
+  LR_GER_barbarossa_declare_title: "「バルバロッサ」発動"
+  LR_GER_barbarossa_declare_desc: "【独指導者ラジオ演説 抄訳】「ドイツ国民よ。我々はボルシェヴィズムの脅威を打ち砕くため、東方において戦いを開始する。」1941年6月22日未明、宣言は砲声とともに放送され、多数の部隊が国境を越えて前進を開始した。"
+  LR_GER_barbarossa_declare_option: "「腐った納屋は一蹴りするだけで崩壊するだろう。」\n[効果] このイベント自体に効果はない。"
+
+  # ソ連側1：警告は無視された（報告 抄訳）
+  LR_SOV_barbarossa_warnings_title: "無視された警告"
+  LR_SOV_barbarossa_warnings_desc: "【在独大使館報告・諜報電報 抄訳】「独軍の東方移動は演習規模を超えている」との報告が重ねて送られたが、「挑発に応じるな」という指示の下、多くは慎重な保留に付された。"
+  LR_SOV_barbarossa_warnings_option: "「まだ、決定的証拠とは言えん……。」\n[効果] このイベント自体に効果はない。"
+
+  # ソ連側2：未明の混乱（電文 抄訳）
+  LR_SOV_barbarossa_confusion_title: "6月22日 未明の混乱"
+  LR_SOV_barbarossa_confusion_desc: "【前線部隊電文 抄訳】「敵機多数接近中、指示を請う」「砲撃継続、通信途絶区画あり」──断片的な報が飛び交う中、これは挑発か本格攻撃か、誰も即断できなかった。"
+  LR_SOV_barbarossa_confusion_option: "「勝手な反撃は許可していないはずだ……！」\n[効果] このイベント自体に効果はない。"
+
+  # ソ連側3：抵抗の誓い（演説 抄訳）
+  LR_SOV_barbarossa_resolve_title: "祖国防衛の誓い"
+  LR_SOV_barbarossa_resolve_desc: "【ソ連指導部演説 抄訳】「我々の大地と都市と工場を守るため、全ての人民は侵略者に抵抗しなければならない。」沈黙ののち発せられた呼びかけは、長く厳しい防衛戦の開始を告げるものだった。"
+  LR_SOV_barbarossa_resolve_option: "「一歩も退くな。祖国のために。」\n[効果] このイベント自体に効果はない。"

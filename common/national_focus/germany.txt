@@ -374,9 +374,6 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				advanced_heavy_tank = 1
-				advanced_heavy_td = 1
-				advanced_heavy_art = 1
-				advanced_heavy_spaa = 1
 			}
 				division_template = {
 					name = "ケー二ヒスティガー師団"

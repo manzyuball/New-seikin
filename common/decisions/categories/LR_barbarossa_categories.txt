@@ -1,0 +1,14 @@
+
+
+    LR_barbarossa_flavor_categories = {
+        icon = generic_prepare_civil_war
+
+
+        allowed = {
+            tag = CUB
+        }
+
+        visible = {
+           is_ai = yes
+        }
+    }
