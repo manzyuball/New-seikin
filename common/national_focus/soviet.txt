@@ -266,7 +266,22 @@ focus_tree = {
 					artillery2 = 1
 					antitank2 = 1
 				}
-
+				add_equipment_production = {
+                    equipment = {
+                    type = artillery_equipment_2
+                    }
+                    requested_factories = 25
+                    progress = 1.0
+                    amount = 25
+                }
+				add_equipment_production = {
+                    equipment = {
+                    type = anti_tank_equipment_2
+                    }
+                    requested_factories = 25
+                    progress = 1.0
+                    amount = 25
+                }
 				division_template = {
 					name = "赤軍砲兵師団"
 					is_locked = no

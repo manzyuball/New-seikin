@@ -17,14 +17,7 @@ focus_tree = {
 		}
 	}
 
-	add_equipment_production = {
-        equipment = {
-        type = artillery_equipment_2
-        }
-        requested_factories = 25
-        progress = 1.0
-        amount = 25
-      }
+
 
 	default = no
 

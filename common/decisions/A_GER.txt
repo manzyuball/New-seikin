@@ -3,13 +3,13 @@ A_GER_cat = { #ディシジョンカテゴリーの名前
 	A_GER1941_1 = { #ディシジョンの名前
 
 		icon = GFX_decision_steel  #ディシジョンのアイコン(gfx\interface\decisions\)
-
 		available = {  #このディシジョンが選択できるようになる条件
-			date > 1940.12.1
+			date > 1940.6.1
+			date < 1941.6.1
 		}
 
 		visible = {  #このディシジョンが出現する条件
-		    date < 1940.12.2
+		    always = yes
 		}
 
 		cost = 1  #選択するのに必要な政治力
