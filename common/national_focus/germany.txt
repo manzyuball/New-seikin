@@ -17,6 +17,15 @@ focus_tree = {
 		}
 	}
 
+	add_equipment_production = {
+        equipment = {
+        type = artillery_equipment_2
+        }
+        requested_factories = 25
+        progress = 1.0
+        amount = 25
+      }
+
 	default = no
 
 	initial_show_position = {
@@ -56,43 +65,32 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				basic_medium_td = 1
-				basic_medium_art = 1
-				basic_medium_spaa = 1
 			}
 				division_template = {
 					name = "III型突撃砲師団"
 					is_locked = no
 					priority = 1
 					regiments = {
-						medium_tank_destroyer_brigade = { x = 0 y = 0 }
-						medium_tank_destroyer_brigade = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 0 y = 4 }
 						medium_armor = { x = 1 y = 0 }
-						motorized = { x = 2 y = 0 }
-						motorized = { x = 2 y = 1 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						logistics_company = { x = 0 y = 1 }
-                        signal_company = {
-							x = 0
-							y = 2
-						}
-						mot_recon = {
-							x = 0
-							y = 3
-						}
-					}
-				}
-				division_template = {
-					name = "III号コオロギ師団"
-					is_locked = no
-					priority = 1
-					regiments = {
-						medium_sp_artillery_brigade = { x = 0 y = 0 }
-						medium_sp_artillery_brigade = { x = 0 y = 1 }
-						medium_armor = { x = 1 y = 0 }
-						motorized = { x = 2 y = 0 }
-						motorized = { x = 2 y = 1 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 1 y = 4 }
+						medium_tank_destroyer_brigade = { x = 2 y = 0 }
+						medium_tank_destroyer_brigade = { x = 2 y = 1 }
+						medium_tank_destroyer_brigade = { x = 2 y = 2 }
+						medium_tank_destroyer_brigade = { x = 2 y = 3 }
+						medium_tank_destroyer_brigade = { x = 2 y = 4 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 3 y = 4 }
 					}
 					support = {
 						engineer = { x = 0 y = 0 }
@@ -111,13 +109,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"III型突撃砲師団\" division_template = \"III型突撃砲師団\" start_experience_factor = 0.3"
 						owner = GER
-						count = 7
-						allow_spawning_on_enemy_provs = no
-					}
-					create_unit = {
-						division = "name = \"III号コオロギ師団\" division_template = \"III号コオロギ師団\" start_experience_factor = 0.3"
-						owner = GER
-						count = 7
+						count = 14
 						allow_spawning_on_enemy_provs = no
 					}
 				}
@@ -374,6 +366,9 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				advanced_heavy_tank = 1
+				advanced_heavy_td = 1
+				advanced_heavy_art = 1
+				advanced_heavy_spaa = 1
 			}
 				division_template = {
 					name = "ケー二ヒスティガー師団"

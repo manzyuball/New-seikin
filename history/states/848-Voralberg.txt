@@ -1,0 +1,24 @@
+
+state={
+	id=848
+	name="STATE_848"
+	manpower = 154354
+	state_category = pastoral
+	history={
+		buildings = {
+			#infrastructure = 2
+			#industrial_complex = 1
+		}
+		owner = HUN
+		add_core_of = HUN
+		1941.1.1 = {
+			owner = GER
+			add_core_of = GER
+		}
+	}
+	provinces={
+		6678 6680 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

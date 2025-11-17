@@ -5,7 +5,7 @@
 
 
         allowed = {
-            tag = CUB
+            tag = LUX
         }
 
         visible = {

@@ -1,0 +1,95 @@
+bookmarks = {
+	bookmark = { 
+		name = "TYPHOON_NAME"
+		desc = "TYPHOON_DESC"
+		date = 1940.6.1.12
+		picture = "GFX_select_date_3vs3"
+		default_country = "GER"
+		default = yes
+
+		"GER"={
+			history = "GER_TYPHOON_DESC"
+			ideology = fascism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				GER_idea_001
+			}
+		}
+
+		"ITA"={
+			history = "GER_TYPHOON_DESC"
+			ideology = fascism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				GER_idea_001
+			}
+		}
+
+		"HUN"={
+			history = "GER_TYPHOON_DESC"
+			ideology = fascism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				GER_idea_001
+			}
+		}
+
+		"SOV" = {
+			history = "GER_TYPHOON_DESC"
+			ideology = communism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				SOV_idea_001
+			}
+		}
+
+		"FRA" = {
+			history = "GER_TYPHOON_DESC"
+			ideology = democratic
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				SOV_idea_001
+			}
+		}
+
+		"FIN" = {
+			history = "GER_TYPHOON_DESC"
+			ideology = neutrality
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				SOV_idea_001
+			}
+		}
+
+		"HOL" = {
+			history = "GER_TYPHOON_DESC"
+			ideology = neutrality
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				SOV_idea_001
+			}
+		}
+
+		"ROM"={
+			history = "GER_TYPHOON_DESC"
+			ideology = fascism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				GER_idea_001
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,63 @@
+1940.6.1 = {
+capital = 16
+
+oob = "FRA_randam"
+
+set_war_support = 1 set_stability = 1
+#et_convoys = 500
+
+complete_national_focus = army_NF
+
+add_timed_idea = {
+	idea = tyouhei
+	days = 200
+}
+
+add_timed_idea = {
+	idea = gokagetu_keikaku
+	days = 150
+}
+every_state = {
+    set_building_level = {
+    type = air_base
+    level = 10
+    }
+}
+
+
+add_offsite_building = { type = arms_factory level = 100 }
+
+#リーダー
+recruit_character = FRA_edouard_daladier
+
+
+set_technology = {
+	infantry_weapons1 = 1
+
+	motorised_infantry = 1
+
+	tech_support = 1
+
+	artillery1 = 1
+	antiair2 = 1
+	antitank2 = 1
+
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+
+	fighter2 = 1
+	CAS2 = 1
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1936.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 100
+}
+}

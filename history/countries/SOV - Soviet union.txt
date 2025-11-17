@@ -1,0 +1,122 @@
+1940.6.1 = {
+capital = 219
+
+oob = "SOV_1vs1"
+
+set_war_support = 1 set_stability = 1
+#set_convoys = 500
+
+add_timed_idea = {
+	idea = tyouhei
+	days = 200
+}
+
+add_timed_idea = {
+	idea = gokagetu_keikaku
+	days = 150
+}
+every_state = {
+    set_building_level = {
+    type = air_base
+    level = 10
+    }
+}
+
+
+complete_national_focus = soviet
+
+
+add_offsite_building = { type = arms_factory level = 100 }
+
+recruit_character = SOV_iosif_stalin
+
+set_technology = {
+	infantry_weapons1 = 1
+
+	motorised_infantry = 1
+
+	tech_support = 1
+
+	artillery1 = 1
+	antiair2 = 1
+	antitank2 = 1
+
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+
+	fighter1 = 1
+	CAS1 = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1922.4.3"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 100
+}
+}
+1941.1.1 = {
+capital = 219
+
+oob = "SOV_1vs1"
+
+set_war_support = 1 set_stability = 1
+#set_convoys = 500
+
+add_timed_idea = {
+	idea = tyouhei
+	days = 200
+}
+
+add_timed_idea = {
+	idea = gokagetu_keikaku
+	days = 150
+}
+every_state = {
+    set_building_level = {
+    type = air_base
+    level = 10
+    }
+}
+
+add_offsite_building = { type = arms_factory level = 40 }
+
+complete_national_focus = soviet
+
+recruit_character = SOV_iosif_stalin
+
+set_technology = {
+	infantry_weapons1 = 1
+
+	motorised_infantry = 1
+
+	tech_support = 1
+
+	artillery1 = 1
+	antiair2 = 1
+	antitank2 = 1
+
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+
+	fighter1 = 1
+	CAS1 = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1922.4.3"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 100
+}
+}

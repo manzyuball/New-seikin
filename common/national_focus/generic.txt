@@ -1,0 +1,23 @@
+focus_tree = {
+	id = generic_focus
+	
+	country = {
+		factor = 29
+	}
+	
+	default = yes
+	reset_on_civilwar = no
+
+	focus = {
+		id = army_NF
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+		cost = 20
+		completion_reward = {
+			army_experience = 1
+		}
+		available_if_capitulated = yes
+	}
+
+}

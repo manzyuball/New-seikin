@@ -1,0 +1,823 @@
+﻿division_template = {
+	name = "歩兵師団"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 3 y = 3 }
+		infantry = { x = 3 y = 4 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		anti_air = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "戦車師団"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		medium_armor = { x = 0 y = 3 }
+		medium_armor = { x = 0 y = 4 }
+        medium_armor = { x = 1 y = 0 }
+		medium_armor = { x = 1 y = 1 }
+		medium_armor = { x = 1 y = 2 }
+		medium_armor = { x = 1 y = 3 }
+		medium_armor = { x = 1 y = 4 }
+		medium_armor = { x = 2 y = 0 }
+        medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		logistics_company = { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+	}
+}
+
+units = {
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "戦車師団"
+		location = 6380
+		division_template = "戦車師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+
+	division= {	
+		name = "歩兵師団"
+		location = 6380
+		division_template = "歩兵師団"
+		start_experience_factor = 0.3 start_equipment_factor = 0.01
+	}
+}

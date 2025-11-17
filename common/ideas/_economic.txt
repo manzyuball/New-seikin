@@ -1,0 +1,91 @@
+ideas = {
+
+	economy = { 
+		law = yes
+		use_list_view = yes
+		
+		civilian_economy = { #民間経済
+			
+		
+			cost = 800
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		war_economy = { #戦争経済
+			
+		
+			cost = 800
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0
+			}
+
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+	}	
+
+	
+	trade_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		free_trade = { #自由貿易
+
+			available = {
+		#		if = {
+		#			limit = {
+		#				original_tag = SPR
+		#				has_dlc = "La Resistance"
+		#			}
+		#			NOT = { has_completed_focus = SPR_all_must_bear_the_torch }
+		#		}
+			}
+						
+			cost = 150
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   			}
+		}
+		
+		closed_economy = { #閉鎖経済
+			
+			
+			
+			cost = 150
+			removal_cost = -1
+			
+			
+			modifier = {
+				consumer_goods_factor = 0
+			}
+			
+			on_add = {
+				custom_effect_tooltip = closed_economy_TT
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+   			}
+		}
+	}
+}

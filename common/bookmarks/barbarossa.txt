@@ -1,0 +1,35 @@
+bookmarks = {
+	bookmark = { 
+		name = "BARBAROSSA_NAME"
+		desc = "BARBAROSSA_DESC"
+		date = 1941.1.1.12
+		picture = "GFX_select_date_1vs1"
+		default_country = "GER"
+		default = yes
+
+		"GER"={
+			history = "GER_BARBAROSSA_DESC"
+			ideology = fascism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				GER_idea_001
+			}
+		}
+
+		"SOV" = {
+			history = "GER_BARBAROSSA_DESC"
+			ideology = communism
+			ideas = {
+				seisann_keikaku
+				gokagetu_keikaku
+				SOV_idea_001
+			}
+		}
+		
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

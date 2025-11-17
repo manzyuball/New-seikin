@@ -1,0 +1,46 @@
+ideas = {
+	
+	country = {
+		gokagetu_keikaku = {
+		
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			picture = ARG_rapid_militarization
+			
+			modifier = {
+				#industrial_capacity_dockyard = 2
+				industrial_capacity_factory = 7
+				#line_change_production_efficiency_factor = 0.99
+			}
+		}
+	}
+
+	country = {
+		tyouhei = {
+		
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				training_time_army_factor = -0.9
+			}
+		}
+	}
+}

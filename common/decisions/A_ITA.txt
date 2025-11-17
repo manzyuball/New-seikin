@@ -1,0 +1,36 @@
+A_ITA_cat = { #ディシジョンカテゴリーの名前
+
+	A_ITA1941_2 = { #ディシジョンの名前
+
+		icon = GFX_decision_steel  #ディシジョンのアイコン(gfx\interface\decisions\)
+
+		available = {  #このディシジョンが選択できるようになる条件
+		    date > 1940.6.1
+		}
+
+		visible = {  #このディシジョンが出現する条件
+		    date < 1941.6.1
+		}
+
+		cost = 0  #選択するのに必要な政治力
+		fire_only_once = yes  #一度切りか否か
+
+		complete_effect = { #選択時の効果
+		add_resource = {
+			type = aluminium
+			amount = 100
+			state = 158
+		}
+		add_resource = {
+			type = steel
+			amount = 100
+			state = 117
+		}
+		add_resource = {
+			type = chromium
+			amount = 100
+			state = 160
+		}
+		}
+	}
+}

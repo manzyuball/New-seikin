@@ -1,0 +1,24 @@
+
+state = {
+	id = 156
+	name = "STATE_156"
+	manpower = 1772000 # was 2966315 before Puglia was added
+	
+	state_category = town
+	history = {
+		owner = ITA
+		victory_points = {
+			9990 1 
+		}
+		add_core_of = ITA
+		1941.1.1 = {
+			owner = ZZZ
+		}
+	}
+
+	provinces = {
+		3901 9990 10027 12066 12098 
+	}
+
+	local_supplies = 0.0 
+}

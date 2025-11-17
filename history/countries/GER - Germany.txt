@@ -1,0 +1,132 @@
+1940.6.1 = {
+capital = 64
+
+oob = "GER_1vs1"
+
+set_war_support = 1 set_stability = 1
+#set_convoys = 500
+
+add_timed_idea = {
+	idea = tyouhei
+	days = 200
+}
+
+add_timed_idea = {
+	idea = gokagetu_keikaku
+	days = 150
+}
+every_state = {
+    set_building_level = {
+    type = air_base
+    level = 10
+    }
+}
+
+
+complete_national_focus = german_focus
+
+
+add_offsite_building = { type = arms_factory level = 100 }
+
+
+#欧州固有のリーダー
+recruit_character = GER_adolf_hitler
+
+
+set_technology = {
+	infantry_weapons1 = 1
+
+	motorised_infantry = 1
+
+	tech_support = 1
+
+	artillery1 = 1
+	antiair2 = 1
+	antitank2 = 1
+
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+
+	fighter2 = 1
+	CAS2 = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+}
+}
+
+1941.1.1 = {
+capital = 64
+
+oob = "GER_1vs1"
+
+set_war_support = 1 set_stability = 1
+#set_convoys = 500
+
+add_timed_idea = {
+	idea = tyouhei
+	days = 200
+}
+
+add_timed_idea = {
+	idea = gokagetu_keikaku
+	days = 150
+}
+
+add_offsite_building = { type = arms_factory level = 40 }
+
+complete_national_focus = german_focus
+
+
+#欧州固有のリーダー
+recruit_character = GER_adolf_hitler
+
+
+
+every_state = {
+    set_building_level = {
+    type = air_base
+    level = 10
+    }
+}
+
+
+set_technology = {
+	infantry_weapons1 = 1
+
+	motorised_infantry = 1
+
+	tech_support = 1
+
+	artillery1 = 1
+	antiair2 = 1
+	antitank2 = 1
+
+	improved_light_tank = 1
+	basic_medium_tank = 1
+	basic_heavy_tank = 1
+
+	fighter2 = 1
+	CAS2 = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1933.3.5"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+}
+}

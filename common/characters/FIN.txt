@@ -1,0 +1,16 @@
+characters = {
+	### NEUTRALITY ###
+	FIN_pehr_evind_svinhufvud = {
+		name = FIN_pehr_evind_svinhufvud
+		portraits = {
+			civilian = {
+				large = GFX_portrait_FIN_pehr_evind_svinhufvud
+			}
+		}
+		country_leader = {
+			ideology = moderatism #National Coalition Party
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+}

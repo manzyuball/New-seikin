@@ -1,0 +1,8 @@
+A_ROM_cat = { #ディシジョンカテゴリーの名前
+
+	icon = generic_industry #ディシジョンのアイコン(gfx\interface\decisions\)
+
+	allowed = { #このディシジョンカテゴリーが表示される条件
+		tag = ROM #自国がドイツである
+	}
+}

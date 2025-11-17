@@ -1,0 +1,21 @@
+spriteTypes = {
+
+	SpriteType = {
+		name = "GFX_BoI_logo"
+		texturefile = "gfx/onlylogo.png"
+	}
+	SpriteType = {
+		name = "GFX_hoi_logo"
+		texturefile = "gfx/hoilogo.png"
+	}
+
+	corneredTileSpriteType = {
+		name = "hoi3menu"
+		texturefile = "gfx/interface/hoi3menu.dds"
+		borderSize = { x=0 y=0 }
+		size = { x=300 y=492 }
+		tilingCenter = no
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+}

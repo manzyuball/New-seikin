@@ -1,17 +1,17 @@
 ﻿l_japanese:
   # 中央起点
-  SOV_red_army_armor_plan: "赤軍装甲計画"
-  SOV_red_army_armor_plan_desc: "独ソ戦を見据え、赤軍の機甲戦力と支援兵科を体系的に再編する。中戦車、重戦車、砲兵、機械化、航空──いずれかの重点構想を選択し、大戦期ソ連軍の強みを最大限に引き出さなければならない。"
+  SOV_red_army_armor_plan: "スタフカ"
+  SOV_red_army_armor_plan_desc: "来る戦争を見据え、赤軍の機甲戦力と支援兵科を体系的に再編する。中戦車、重戦車、砲兵、機械化、航空──いずれかの重点構想を選択し、赤軍の強みを最大限に引き出さなければならない。"
   SOV_red_army_armor_plan_tt: "以下の5つの国家方針を解禁する：\n§YT-34中戦車ルート§!/§YKV・IS重戦車ルート§!/§Y砲兵・カチューシャルート§!/§Y縦深戦ルート§!/§Y赤色空軍ルート§!。\n§Rいずれか1ルートのみ選択可能§!。\n[情報] 全て無料師団・前倒し解禁を含む強力な計画であり、対人戦バランスに大きく影響する。"
 
   # T-34中戦車量産ルート
   SOV_T34_mass_production: "T-34中戦車"
   SOV_T34_mass_production_desc: "T-34は火力、防御力、機動力のいずれにも優れた中戦車であり、大量生産に適した構造を有している。この車輌を標準戦車として集中的に整備し、機甲戦力の主柱とする。"
-  SOV_T34_mass_production_tt: "§Y改良型中戦車§!を前倒しで研究完了し、\n編制に基づく§CT-34戦車師団§!を§Y8個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+  SOV_T34_mass_production_tt: "§Y改良型中戦車§!を前倒しで研究完了し、\n編制に基づく§CT-34戦車師団§!を§Y6個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
 
   SOV_T34_mass_production_expand: "T-34大規模戦線展開"
   SOV_T34_mass_production_expand_desc: "既存の量産体制をさらに拡張し、赤軍の各戦線にT-34戦車師団を集中的に投入する。質ではなく数で戦局を圧倒する構想である。"
-  SOV_T34_mass_production_expand_tt: "編制に基づく§CT-34戦車師団§!を追加で§Y24個師団§!無料で配備する。"
+  SOV_T34_mass_production_expand_tt: "編制に基づく§CT-34戦車師団§!を追加で§Y16個師団§!無料で配備する。"
 
   # KV/IS重戦車突破ルート
   SOV_KV_IS_breakthrough: "KV戦車"
@@ -25,20 +25,20 @@
   # 砲兵+カチューシャ火力ルート
   SOV_artillery_katyusha_firepower: "赤軍砲兵"
   SOV_artillery_katyusha_firepower_desc: "旧来の火砲運用を見直し、榴弾砲および対戦車砲を体系的に近代化することで、歩兵師団の火力と防御力を飛躍的に高める。"
-  SOV_artillery_katyusha_firepower_tt: "§Y改良型野戦砲§!および§Y改良型対戦車砲§!を前倒しで研究完了し、\n編制に基づく§C赤軍砲兵支援師団§!を§Y16個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+  SOV_artillery_katyusha_firepower_tt: "§Y改良型野戦砲§!および§Y改良型対戦車砲§!を前倒しで研究完了し、\n編制に基づく§C赤軍砲兵支援師団§!を§Y24個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
 
   SOV_katyusha_guard_rocket: "カチューシャ"
   SOV_katyusha_guard_rocket_desc: "多連装ロケット砲『カチューシャ』を親衛部隊として集中運用し、敵集団および拠点に対する面制圧射撃能力を極大化する。"
-  SOV_katyusha_guard_rocket_tt: "§Yカチューシャ§!を解禁し、\n編制に基づく§Cカチューシャ師団§!を§Y8個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+  SOV_katyusha_guard_rocket_tt: "§Yカチューシャ§!を解禁し、\n編制に基づく§Cカチューシャ師団§!を§Y12個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
 
   # ガード機械化・縦深戦ルート
   SOV_guard_mech_deep_battle: "親衛狙撃兵師団再編"
   SOV_guard_mech_deep_battle_desc: "戦功ある部隊を親衛狙撃兵として再編成し、装備と訓練を優先的に配分することで、信頼性の高い精鋭歩兵戦力を構築する。"
-  SOV_guard_mech_deep_battle_tt: "§Y改良歩兵装備§!を前倒しで研究完了し、\n編制に基づく§C親衛狙撃兵師団§!を§Y12個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+  SOV_guard_mech_deep_battle_tt: "§Y改良歩兵装備§!を前倒しで研究完了し、\n編制に基づく§C親衛狙撃兵師団§!を§Y18個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
 
   SOV_guard_mech_deep_battle_elite: "縦深機械化"
   SOV_guard_mech_deep_battle_elite_desc: "機械化歩兵と中戦車を統合した親衛機械化師団を中核とし、縦深戦構想に基づく連続攻勢能力を獲得する。"
-  SOV_guard_mech_deep_battle_elite_tt: "§Y改良型機械化車体§!を前倒しで研究完了し、\n編制に基づく§C親衛機械化縦深師団§!を§Y8個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
+  SOV_guard_mech_deep_battle_elite_tt: "§Y改良型機械化車体§!を前倒しで研究完了し、\n編制に基づく§C親衛機械化縦深師団§!を§Y12個師団§!無料で配備する。\n※この計画を選択すると、他の専門計画は実行できない。"
 
   # 赤色空軍近代化ルート
   SOV_red_airforce_modernization: "赤色空軍"

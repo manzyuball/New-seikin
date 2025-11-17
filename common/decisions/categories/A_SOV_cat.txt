@@ -1,0 +1,8 @@
+A_SOV_cat = { 
+
+	icon = generic_industry
+
+	allowed = {
+		tag = SOV 
+	}
+}

@@ -1,0 +1,8 @@
+A_ITA_cat = { 
+
+	icon = generic_industry 
+
+	allowed = { 
+		tag = ITA 
+	}
+}

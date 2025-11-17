@@ -1,0 +1,29 @@
+state = {
+	id = 127
+	name = "STATE_127" # Sussex
+	manpower = 3193383
+	state_category = large_city
+
+	history = {
+
+		#owner = ENG
+		add_core_of = ENG
+		1941.1.1 = {
+			owner = ZZZ
+		}
+
+		victory_points = { 
+			3501 20 # Dover
+		}
+		victory_points = { 
+			9458 15 # Portsmouth
+		}
+
+	}
+
+	provinces = {
+		507 3501 6489 9458 11446 13070 
+	}
+
+	local_supplies = 16.0 
+}

@@ -1,0 +1,37 @@
+ideas = {
+
+	mobilization_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		scraping_the_barrel = {
+						
+			cost = 800
+			removal_cost = -1
+			level = 6
+			
+			available = {
+				has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+			}
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 60 # being disarmed is bad in a wargame yo
+					has_idea = disarmed_nation 
+				}
+			}
+
+			modifier = {
+				conscription = 0.1
+			}
+			
+			default = yes
+			
+			cancel_if_invalid = no
+		}
+	}
+}

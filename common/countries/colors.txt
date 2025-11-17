@@ -1,0 +1,62 @@
+#reload countrycolors
+GER = {
+	color = rgb { 123 124 125 }
+	color_ui = rgb { 123 124 125 }
+}
+USA = {
+	color = rgb { 0 63 142 }
+	color_ui = rgb { 0 63 142 }
+}
+SOV = {
+	color = rgb { 136 6 13 }
+	color_ui = rgb { 136 6 13 }
+}
+FRA = {
+	color = rgb { 30 80 162 }
+	color_ui = rgb { 30 80 162 }
+}
+ITA = {
+	color = rgb { 0 146 70 }
+	color_ui = rgb { 0 146 70 }
+}
+HUN = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 194 198 215 }
+}
+ENG = {
+	color = rgb { 170 38 110 }
+	color_ui = rgb { 170 38 110 }
+}
+HOL = {
+	color = rgb { 255 128 0}
+	color_ui = rgb { 255 128 0}
+}
+SPR = {	
+    color = rgb { 238 120 0 }
+    color_ui = rgb { 238 120 0 }
+}
+ROM = {
+	color = rgb { 215 196 72 }
+	color_ui = rgb { 215 196 72 }
+}
+FIN = {
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 249 126 98 }
+}
+SWE = {
+	color = rgb { 36 132 247 }
+	color_ui = rgb { 47 172 255 }
+}
+JAP = {
+	color = rgb { 232 211 209 }
+	color_ui = rgb { 232 211 209 }
+}
+POL = {
+	color = rgb { 220 107 154 }
+	color_ui = rgb { 220 107 154 }
+}
+CZE = {
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 54 167 156 }
+}
+

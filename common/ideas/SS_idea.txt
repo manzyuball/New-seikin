@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		tyouhei = {
+		
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_reserve_divisions
+			
+			modifier = {
+				training_time_army_factor = -0.9
+				army_speed_factor = 5
+			}
+		}
+	}
+}
