@@ -7,7 +7,7 @@ state = {
 
 	history = { 
 
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = CBV
 
 		victory_points = {

@@ -1,7 +1,12 @@
 ﻿1940.6.1 = {
 capital = 4
 
-oob = "HUN_randam"
+if = {
+	limit = {
+		is_ai = no
+	}
+	#load_oob = HUN_randam
+}
 
 set_war_support = 1 set_stability = 1
 #set_convoys = 500
@@ -16,12 +21,6 @@ add_timed_idea = {
 add_timed_idea = {
 	idea = gokagetu_keikaku
 	days = 150
-}
-every_state = {
-    set_building_level = {
-    type = air_base
-    level = 10
-    }
 }
 
 add_offsite_building = { type = arms_factory level = 100 }

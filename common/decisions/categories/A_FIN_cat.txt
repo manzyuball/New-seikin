@@ -1,4 +1,4 @@
-A_GER_cat = { #ディシジョンカテゴリーの名前
+A_FIN_cat = { #ディシジョンカテゴリーの名前
 
 	icon = generic_industry #ディシジョンのアイコン(gfx\interface\decisions\)
 

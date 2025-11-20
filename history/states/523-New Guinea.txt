@@ -8,7 +8,7 @@ state = {
 	history = {
 
 		add_core_of = PNG
-		owner = ZZZ
+		#owner = ZZZ
 
 		buildings = {
 			#infrastructure = 1

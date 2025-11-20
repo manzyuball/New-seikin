@@ -7,7 +7,7 @@ state = {
 	state_category = city
 
 	history = {
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = SOV
 		victory_points = {
 			1278 5

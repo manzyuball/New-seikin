@@ -10,7 +10,7 @@ state = {
 		victory_points = {
 			13240 2 
 		}
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = ETH
 		add_core_of = AFA
 

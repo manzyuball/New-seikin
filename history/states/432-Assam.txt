@@ -13,7 +13,7 @@ state={
 	local_supplies=0.000
 	history={
 
-		owner = ZZZ
+		#owner = ZZZ
 		buildings = {
 			#infrastructure = 1
 		}

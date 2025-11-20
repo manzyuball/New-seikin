@@ -33,4 +33,24 @@ A_GER_cat = { #ディシジョンカテゴリーの名前
 		}
 		}
 	}
+	GER_barbarossa_declare_trigger = {
+    activation = {
+        NOT = { has_country_flag = GER_barbarossa_declare_done }
+    }
+    available = {
+        always = no
+    }
+    cancel_trigger = {
+        always = no
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = no
+    war_with_on_timeout = SOV
+    days_mission_timeout = 172
+    selectable_mission = yes
+    timeout_effect = {
+		set_country_flag = GER_barbarossa_declare_done
+		country_event = { id = LR.4 }
+    }
+    }
 }

@@ -70,6 +70,14 @@ focus_tree = {
 				set_technology = {
 					improved_medium_tank = 1
 				}
+				add_equipment_production = {
+					equipment = {
+					type = medium_tank_equipment_1
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
 
 				division_template = {
 					name = "T-34戦車師団"
@@ -158,6 +166,22 @@ focus_tree = {
 					improved_heavy_tank = 1
 					improved_heavy_art = 1
 				}
+				add_equipment_production = {
+					equipment = {
+					type = heavy_tank_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
+				add_equipment_production = {
+					equipment = {
+					type = heavy_tank_artillery_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
 
 				division_template = {
 					name = "KV重戦車師団"
@@ -205,6 +229,14 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = {
 					advanced_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+					type = heavy_tank_equipment_3
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
 				}
 
 				division_template = {
@@ -328,7 +360,15 @@ focus_tree = {
 
 			hidden_effect = {
 				set_technology = {
-					rocket_artillery = 1
+					motorized_rocket_unit = 1
+				}
+				add_equipment_production = {
+					equipment = {
+					type = motorized_rocket_equipment_1
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
 				}
 
 				division_template = {
@@ -387,6 +427,14 @@ focus_tree = {
 				set_technology = {
 					advanced_infantry_weapons = 1
 				}
+				add_equipment_production = {
+					equipment = {
+					type = infantry_equipment_3
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
 
 				division_template = {
 					name = "モスクワ親衛師団"
@@ -436,6 +484,14 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = {
 					mechanised_infantry2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+					type = mechanized_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
 				}
 
 				division_template = {
@@ -497,6 +553,22 @@ focus_tree = {
 					fighter2 = 1
 					CAS2 = 1
 				}
+				add_equipment_production = {
+					equipment = {
+					type = fighter_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
+				add_equipment_production = {
+					equipment = {
+					type = CAS_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
 				# capital_scope = {
 				# 	create_wing = {
 				# 		owner = SOV
@@ -532,6 +604,22 @@ focus_tree = {
 				set_technology = {
 					fighter3 = 1
 					CAS3 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+					type = fighter_equipment_3
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
+				add_equipment_production = {
+					equipment = {
+					type = CAS_equipment_3
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
 				}
 			}
 		}

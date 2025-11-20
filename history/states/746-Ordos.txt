@@ -9,7 +9,7 @@ state={
 	
 	history=
 	{
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = CHI
 	}
 	manpower=500000

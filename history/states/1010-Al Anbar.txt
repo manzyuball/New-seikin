@@ -9,7 +9,7 @@ state = {
 	}
 
 	history = {
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = IRQ
 		victory_points = {
 			12413 1 # Rumadiyah

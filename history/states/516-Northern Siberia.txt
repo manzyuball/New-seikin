@@ -7,7 +7,7 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = SOV
 		victory_points = {
 			4859 1

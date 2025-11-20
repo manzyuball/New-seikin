@@ -1,8 +1,13 @@
 1940.6.1 = {
 capital = 64
 
-oob = "GER_1vs1"
 
+if = {
+	limit = {
+		is_ai = no
+	}
+	#load_oob = GER_1vs1
+}
 set_war_support = 1 set_stability = 1
 #set_convoys = 500
 
@@ -15,15 +20,7 @@ add_timed_idea = {
 	idea = gokagetu_keikaku
 	days = 150
 }
-every_state = {
-    set_building_level = {
-    type = air_base
-    level = 10
-    }
-}
 
-
-complete_national_focus = german_focus
 
 
 add_offsite_building = { type = arms_factory level = 100 }
@@ -67,7 +64,12 @@ set_popularities = {
 1941.1.1 = {
 capital = 64
 
-oob = "GER_1vs1"
+if = {
+	limit = {
+		is_ai = no
+	}
+	load_oob = GER_1vs1
+}
 
 set_war_support = 1 set_stability = 1
 #set_convoys = 500
@@ -84,7 +86,7 @@ add_timed_idea = {
 
 add_offsite_building = { type = arms_factory level = 40 }
 
-complete_national_focus = german_focus
+complete_national_focus = GER_war_plans
 
 
 #欧州固有のリーダー
@@ -92,12 +94,6 @@ recruit_character = GER_adolf_hitler
 
 
 
-every_state = {
-    set_building_level = {
-    type = air_base
-    level = 10
-    }
-}
 
 
 set_technology = {

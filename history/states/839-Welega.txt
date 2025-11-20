@@ -15,7 +15,7 @@ state = {
 			13243 1 
 		}
 		
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = ETH
 	}
 

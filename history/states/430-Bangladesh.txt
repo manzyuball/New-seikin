@@ -4,7 +4,7 @@ state={
 
 	history={
 		add_core_of = BAN
-		owner = ZZZ
+		#owner = ZZZ
 		victory_points = {
 			11929 1 
 		}

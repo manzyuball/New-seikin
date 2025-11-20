@@ -59,6 +59,14 @@ focus_tree = {
 			set_technology = {
 				basic_medium_td = 1
 			}
+			add_equipment_production = {
+				equipment = {
+				type = medium_tank_destroyer_equipment_1
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 				division_template = {
 					name = "III型突撃砲師団"
 					is_locked = no
@@ -128,6 +136,14 @@ focus_tree = {
 			set_technology = {
 				advanced_light_tank = 1
 			}
+			add_equipment_production = {
+				equipment = {
+				type = light_tank_equipment_3
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 				division_template = {
 					name = "レオパルト試験機甲師団"
 					is_locked = no
@@ -187,9 +203,14 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				improved_medium_tank = 1
-				improved_medium_td = 1
-				improved_medium_art = 1
-				improved_medium_spaa = 1
+			}
+			add_equipment_production = {
+				equipment = {
+				type = medium_tank_equipment_2
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
 			}
 				division_template = {
 					name = "IV号戦車師団"
@@ -238,9 +259,14 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				advanced_medium_tank = 1
-				advanced_medium_td = 1
-				advanced_medium_art = 1
-				advanced_medium_spaa = 1
+			}
+			add_equipment_production = {
+				equipment = {
+				type = medium_tank_equipment_3
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
 			}
 				division_template = {
 					name = "パンター中戦車師団"
@@ -294,10 +320,15 @@ focus_tree = {
 			hidden_effect = {
 				set_technology = {
 				improved_heavy_tank = 1
-				improved_heavy_td = 1
-				improved_heavy_art = 1
-				improved_heavy_spaa = 1
 			    }
+				add_equipment_production = {
+					equipment = {
+					type = heavy_tank_equipment_2
+					}
+					requested_factories = 25
+					progress = 1.0
+					amount = 25
+				}
 				division_template = {
 					name = "ティガー師団"
 					is_locked = no
@@ -359,9 +390,14 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				advanced_heavy_tank = 1
-				advanced_heavy_td = 1
-				advanced_heavy_art = 1
-				advanced_heavy_spaa = 1
+			}
+			add_equipment_production = {
+				equipment = {
+				type = heavy_tank_equipment_3
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
 			}
 				division_template = {
 					name = "ケー二ヒスティガー師団"
@@ -424,6 +460,14 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				super_heavy_tank = 1
+			}
+			add_equipment_production = {
+				equipment = {
+				type = super_heavy_tank_equipment_1
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
 			}
 				division_template = {
 					name = "マウス超重戦車師団"
@@ -502,6 +546,14 @@ focus_tree = {
 				tech_signal_company3 = 1
 				tech_military_police3 = 1
 			}
+			add_equipment_production = {
+				equipment = {
+				type = mechanized_equipment_2
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 				division_template = {
 					name = "装甲擲弾兵師団"
 					is_locked = no
@@ -560,6 +612,14 @@ focus_tree = {
 				tech_mountaineers = 1
 				advanced_infantry_weapons = 1
 			}
+			add_equipment_production = {
+				equipment = {
+				type = infantry_equipment_3
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 				division_template = {
 					name = "山岳猟兵編制"
 					is_locked = no
@@ -613,7 +673,23 @@ focus_tree = {
 				fighter2 = 1
 				CAS2 = 1
 				paratroopers = 1
-			}				
+			}
+			add_equipment_production = {
+				equipment = {
+				type = fighter_equipment_2
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
+			add_equipment_production = {
+				equipment = {
+				type = CAS_equipment_2
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 			}
 
 		}
@@ -635,7 +711,15 @@ focus_tree = {
 			hidden_effect = {
 			set_technology = {
 				jet_fighter1 = 1
-			}				
+			}
+			add_equipment_production = {
+				equipment = {
+				type = jet_fighter_equipment_1
+				}
+				requested_factories = 25
+				progress = 1.0
+				amount = 25
+			}
 			}
 
 		}

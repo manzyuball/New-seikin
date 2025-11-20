@@ -3,7 +3,7 @@ state = {
 	name = "STATE_876" #Udachny
 
 	history = {
-		owner = ZZZ
+		#owner = ZZZ
 		add_core_of = SOV
 	}
 
