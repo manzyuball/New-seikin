@@ -1,0 +1,908 @@
+﻿focus_tree = {
+	id = hungarian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUN
+		}
+	}
+	default = no
+	initial_show_position = {
+		focus = HUN_rearmament_program
+	}
+	# 共通起点
+	focus = {
+		id = HUN_rearmament_program
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 10
+		y = 0
+		cost = 0
+		completion_reward = {
+		}
+	}
+	# 1. トルディIII型戦車ルート (全師団装甲化計画)
+	focus = {
+		id = HUN_toldi_mass_production
+		icon = GFX_focus_NZL_bob_semple_tank
+		x = -4
+		y = 1
+		cost = 10
+		relative_position_id = HUN_rearmament_program
+		prerequisite = {
+			focus = HUN_rearmament_program
+		}
+		mutually_exclusive = {
+			focus = HUN_turan_II_development
+		}
+		mutually_exclusive = {
+			focus = HUN_hunyadi_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = HUN_carpathian_guardians
+		}
+		mutually_exclusive = {
+			focus = HUN_st_stephen_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_toldi_mass_production_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_3
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "トルディ快速機甲師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = {
+							x = 0
+							y = 0
+						}
+						light_armor = {
+							x = 1
+							y = 0
+						}
+						light_armor = {
+							x = 2
+							y = 0
+						}
+						light_armor = {
+							x = 0
+							y = 1
+						}
+						light_armor = {
+							x = 1
+							y = 1
+						}
+						motorized = {
+							x = 2
+							y = 1
+						}
+						motorized = {
+							x = 0
+							y = 2
+						}
+						motorized = {
+							x = 1
+							y = 2
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						mot_recon = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"トルディ快速機甲師団\" division_template = \"トルディ快速機甲師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_all_mechanized_army
+		icon = GFX_focus_HUN_form_the_gyorshadtest
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_toldi_mass_production
+		prerequisite = {
+			focus = HUN_toldi_mass_production
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_all_mechanized_army_tt
+			hidden_effect = {
+				set_technology = {
+					mechanised_infantry = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = mechanized_equipment_1
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "王立機械化騎兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = {
+							x = 0
+							y = 0
+						}
+						light_armor = {
+							x = 1
+							y = 0
+						}
+						mechanized = {
+							x = 2
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 1
+							y = 1
+						}
+						mechanized = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						mot_recon = {
+							x = 0
+							y = 1
+						}
+						maintenance_company = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"王立機械化騎兵師団\" division_template = \"王立機械化騎兵師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	# 2. トゥラーンII型戦車ルート (ドイツ式電撃戦)
+	focus = {
+		id = HUN_turan_II_development
+		icon = GFX_focus_generic_tank_production
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = HUN_rearmament_program
+		prerequisite = {
+			focus = HUN_rearmament_program
+		}
+		mutually_exclusive = {
+			focus = HUN_toldi_mass_production
+		}
+		mutually_exclusive = {
+			focus = HUN_hunyadi_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = HUN_carpathian_guardians
+		}
+		mutually_exclusive = {
+			focus = HUN_st_stephen_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_turan_II_development_tt
+			hidden_effect = {
+				set_technology = {
+					improved_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_2
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "トゥラーン中戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = {
+							x = 0
+							y = 0
+						}
+						medium_armor = {
+							x = 1
+							y = 0
+						}
+						medium_armor = {
+							x = 2
+							y = 0
+						}
+						motorized = {
+							x = 0
+							y = 1
+						}
+						motorized = {
+							x = 1
+							y = 1
+						}
+						motorized = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						mot_recon = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"トゥラーン中戦車師団\" division_template = \"トゥラーン中戦車師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_hungarian_blitzkrieg
+		icon = GFX_focus_HUN_establish_the_mavag_army_division
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_turan_II_development
+		prerequisite = {
+			focus = HUN_turan_II_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_hungarian_blitzkrieg_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_3
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "精鋭装甲師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = {
+							x = 0
+							y = 0
+						}
+						medium_armor = {
+							x = 1
+							y = 0
+						}
+						medium_armor = {
+							x = 2
+							y = 0
+						}
+						medium_armor = {
+							x = 0
+							y = 1
+						}
+						motorized = {
+							x = 1
+							y = 1
+						}
+						motorized = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						mot_recon = {
+							x = 0
+							y = 1
+						}
+						logistics_company = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精鋭装甲師団\" division_template = \"精鋭装甲師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	# 3. フニャディ戦車ルート (重戦車ルート)
+	focus = {
+		id = HUN_hunyadi_heavy_tank
+		icon = GFX_focus_generic_heavy_tank
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_rearmament_program
+		prerequisite = {
+			focus = HUN_rearmament_program
+		}
+		mutually_exclusive = {
+			focus = HUN_toldi_mass_production
+		}
+		mutually_exclusive = {
+			focus = HUN_turan_II_development
+		}
+		mutually_exclusive = {
+			focus = HUN_carpathian_guardians
+		}
+		mutually_exclusive = {
+			focus = HUN_st_stephen_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_hunyadi_heavy_tank_tt
+			hidden_effect = {
+				set_technology = {
+					improved_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_2
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "フニャディ重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = {
+							x = 0
+							y = 0
+						}
+						heavy_armor = {
+							x = 1
+							y = 0
+						}
+						heavy_armor = {
+							x = 2
+							y = 0
+						}
+						motorized = {
+							x = 0
+							y = 1
+						}
+						motorized = {
+							x = 1
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						maintenance_company = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"フニャディ重戦車師団\" division_template = \"フニャディ重戦車師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_mobile_fortress_doctrine
+		icon = GFX_focus_generic_tank_assault
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_hunyadi_heavy_tank
+		prerequisite = {
+			focus = HUN_hunyadi_heavy_tank
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_mobile_fortress_doctrine_tt
+			hidden_effect = {
+				set_technology = {
+					super_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = super_heavy_tank_equipment_1
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "鉄壁突破師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = {
+							x = 0
+							y = 0
+						}
+						heavy_armor = {
+							x = 1
+							y = 0
+						}
+						heavy_armor = {
+							x = 2
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 1
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						logistics_company = {
+							x = 0
+							y = 1
+						}
+						maintenance_company = {
+							x = 0
+							y = 2
+						}
+						super_heavy_armor = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"鉄壁突破師団\" division_template = \"鉄壁突破師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 4
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	# 4. 山岳防衛ルート (山岳兵)
+	focus = {
+		id = HUN_carpathian_guardians
+		icon = GFX_focus_SMB_a_land_of_mountains
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = HUN_rearmament_program
+		prerequisite = {
+			focus = HUN_rearmament_program
+		}
+		mutually_exclusive = {
+			focus = HUN_toldi_mass_production
+		}
+		mutually_exclusive = {
+			focus = HUN_turan_II_development
+		}
+		mutually_exclusive = {
+			focus = HUN_hunyadi_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = HUN_st_stephen_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_carpathian_guardians_tt
+			hidden_effect = {
+				set_technology = {
+					mountain_infantry2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_2
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "山岳猟兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						mountaineers = {
+							x = 0
+							y = 0
+						}
+						mountaineers = {
+							x = 1
+							y = 0
+						}
+						mountaineers = {
+							x = 2
+							y = 0
+						}
+						mountaineers = {
+							x = 0
+							y = 1
+						}
+						mountaineers = {
+							x = 1
+							y = 1
+						}
+						artillery_brigade = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"山岳猟兵師団\" division_template = \"山岳猟兵師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_mountain_fortification
+		icon = GFX_focus_generic_mountain_fortification
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_carpathian_guardians
+		prerequisite = {
+			focus = HUN_carpathian_guardians
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_mountain_fortification_tt
+			hidden_effect = {
+				set_technology = {
+					mountain_infantry3 = 1
+				}
+				# 国境要塞の追加（簡易的に首都ステート等に追加、本来はステートID指定が望ましいが汎用性を重視）
+				random_owned_controlled_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					add_building_construction = {
+						type = land_fort
+						level = 3
+						instant_build = yes
+					}
+				}
+				division_template = {
+					name = "精鋭山岳防衛旅団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						mountaineers = {
+							x = 0
+							y = 0
+						}
+						mountaineers = {
+							x = 1
+							y = 0
+						}
+						mountaineers = {
+							x = 2
+							y = 0
+						}
+						anti_tank_brigade = {
+							x = 0
+							y = 1
+						}
+						anti_air_brigade = {
+							x = 1
+							y = 1
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						anti_tank = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精鋭山岳防衛旅団\" division_template = \"精鋭山岳防衛旅団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	# 5. 高級歩兵ルート (大量の高級歩兵)
+	focus = {
+		id = HUN_st_stephen_infantry
+		icon = GFX_focus_HUN_the_lands_of_the_crown_of_saint_stephen
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = HUN_rearmament_program
+		prerequisite = {
+			focus = HUN_rearmament_program
+		}
+		mutually_exclusive = {
+			focus = HUN_toldi_mass_production
+		}
+		mutually_exclusive = {
+			focus = HUN_turan_II_development
+		}
+		mutually_exclusive = {
+			focus = HUN_hunyadi_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = HUN_carpathian_guardians
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_st_stephen_infantry_tt
+			hidden_effect = {
+				set_technology = {
+					infantry_weapons2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_2
+					}
+					requested_factories = 50
+					progress = 1
+					amount = 50
+				}
+				division_template = {
+					name = "王立歩兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						artillery_brigade = {
+							x = 1
+							y = 2
+						}
+						artillery_brigade = {
+							x = 2
+							y = 2
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"王立歩兵師団\" division_template = \"王立歩兵師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 24
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = HUN_total_national_defense
+		icon = GFX_focus_HUN_expand_the_army
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = HUN_st_stephen_infantry
+		prerequisite = {
+			focus = HUN_st_stephen_infantry
+		}
+		completion_reward = {
+			custom_effect_tooltip = HUN_total_national_defense_tt
+			hidden_effect = {
+				set_technology = {
+					infantry_weapons3 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = support_equipment_1
+					}
+					requested_factories = 10
+					progress = 1
+					amount = 10
+				}
+				add_equipment_production = {
+					equipment = {
+						type = anti_tank_equipment_2
+					}
+					requested_factories = 10
+					progress = 1
+					amount = 10
+				}
+				division_template = {
+					name = "精鋭親衛歩兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						anti_tank = {
+							x = 0
+							y = 2
+						}
+						anti_air = {
+							x = 0
+							y = 3
+						}
+						field_hospital = {
+							x = 0
+							y = 4
+						}
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精鋭親衛歩兵師団\" division_template = \"精鋭親衛歩兵師団\" start_experience_factor = 0.3"
+						owner = HUN
+						count = 16
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,521 @@
+﻿focus_tree = {
+	id = italian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 1500
+		y = 1500
+	}
+	initial_show_position = {
+		focus = ITA_military_modernization
+	}
+
+	# 共通起点: 軍の近代化
+	focus = {
+		id = ITA_military_modernization
+		icon = GFX_focus_ITA_culto_del_duce
+		x = 10
+		y = 0
+		cost = 0
+		completion_reward = {
+		}
+	}
+
+	# 1. L6/L8軽戦車ルート (豆戦車大量出し)
+	focus = {
+		id = ITA_L6_mass_production
+		icon = GFX_focus_NZL_bob_semple_tank
+		x = -4
+		y = 1
+		cost = 10
+		relative_position_id = ITA_military_modernization
+		prerequisite = {
+			focus = ITA_military_modernization
+		}
+		mutually_exclusive = {
+			focus = ITA_M16_tank
+			focus = ITA_carabinieri_corps
+			focus = ITA_blackshirts_militia
+			focus = ITA_fiat_motorization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_L6_mass_production_tt
+			hidden_effect = {
+				set_technology = {
+					improved_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_2
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "L6軽戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 2 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"L6軽戦車師団\" division_template = \"L6軽戦車師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_L8_development
+		icon = GFX_focus_generic_tankette
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_L6_mass_production
+		prerequisite = {
+			focus = ITA_L6_mass_production
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_L8_development_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_3
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "L8快速機甲師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 2 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						light_armor = { x = 2 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"L8快速機甲師団\" division_template = \"L8快速機甲師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 15
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 2. M16/M20中戦車ルート
+	focus = {
+		id = ITA_M16_tank
+		icon = GFX_focus_generic_combined_arms
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ITA_military_modernization
+		prerequisite = {
+			focus = ITA_military_modernization
+		}
+		mutually_exclusive = {
+			focus = ITA_L6_mass_production
+			focus = ITA_carabinieri_corps
+			focus = ITA_blackshirts_militia
+			focus = ITA_fiat_motorization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_M16_tank_tt
+			hidden_effect = {
+				set_technology = {
+					improved_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_2
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "M16中戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"M16中戦車師団\" division_template = \"M16中戦車師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_M20_tank
+		icon = GFX_focus_ITA_ferrea_mole_ferreo_cuore
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_M16_tank
+		prerequisite = {
+			focus = ITA_M16_tank
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_M20_tank_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_3
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "M20チェルレ中戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"M20チェルレ中戦車師団\" division_template = \"M20チェルレ中戦車師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 3. カラビニエリ (精鋭攻撃歩兵)
+	focus = {
+		id = ITA_carabinieri_corps
+		icon = GFX_focus_ITA_bersaglieri
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_military_modernization
+		prerequisite = {
+			focus = ITA_military_modernization
+		}
+		mutually_exclusive = {
+			focus = ITA_L6_mass_production
+			focus = ITA_M16_tank
+			focus = ITA_blackshirts_militia
+			focus = ITA_fiat_motorization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_carabinieri_corps_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_infantry_weapons2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_3
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "カラビニエリ突撃師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_tank = { x = 0 y = 2 }
+						recon = { x = 0 y = 3 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"カラビニエリ突撃師団\" division_template = \"カラビニエリ突撃師団\" start_experience_factor = 0.5"
+						owner = ITA
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ITA_carabinieri_mass_production
+		icon = GFX_focus_ITA_moschettieri_del_duce
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_carabinieri_corps
+		prerequisite = {
+			focus = ITA_carabinieri_corps
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_carabinieri_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"カラビニエリ突撃師団\" division_template = \"カラビニエリ突撃師団\" start_experience_factor = 0.5"
+						owner = ITA
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 4. 黒シャツ隊 (決死隊防衛歩兵)
+	focus = {
+		id = ITA_blackshirts_militia
+		icon = GFX_focus_ITA_blackshirts
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = ITA_military_modernization
+		prerequisite = {
+			focus = ITA_military_modernization
+		}
+		mutually_exclusive = {
+			focus = ITA_L6_mass_production
+			focus = ITA_M16_tank
+			focus = ITA_carabinieri_corps
+			focus = ITA_fiat_motorization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_blackshirts_militia_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_2
+					}
+					requested_factories = 30
+					progress = 1
+					amount = 30
+				}
+				division_template = {
+					name = "黒シャツ決死隊"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						military_police = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"黒シャツ決死隊\" division_template = \"黒シャツ決死隊\" start_experience_factor = 0.2"
+						owner = ITA
+						count = 20
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = ITA_blackshirts_mass_production
+		icon = GFX_focus_RAJ_a_private_military
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_blackshirts_militia
+		prerequisite = {
+			focus = ITA_blackshirts_militia
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_blackshirts_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"黒シャツ決死隊\" division_template = \"黒シャツ決死隊\" start_experience_factor = 0.2"
+						owner = ITA
+						count = 20
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+
+	# 5. フィアットトラック量産
+	focus = {
+		id = ITA_fiat_motorization
+		icon = GFX_focus_BRA_joint_italian_motor_development
+		x = 4
+		y = 1
+		cost = 10
+		relative_position_id = ITA_military_modernization
+		prerequisite = {
+			focus = ITA_military_modernization
+		}
+		mutually_exclusive = {
+			focus = ITA_L6_mass_production
+			focus = ITA_M16_tank
+			focus = ITA_carabinieri_corps
+			focus = ITA_blackshirts_militia
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_fiat_motorization_tt
+			hidden_effect = {
+				set_technology = {
+					motorised_infantry = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = motorized_equipment_1
+					}
+					requested_factories = 25
+					progress = 1
+					amount = 25
+				}
+				division_template = {
+					name = "フィアット自動車化師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						motorized = { x = 0 y = 0 }
+						motorized = { x = 1 y = 0 }
+						motorized = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 2 }
+						motorized = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						logistics_company = { x = 0 y = 1 }
+						maintenance_company = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"フィアット自動車化師団\" division_template = \"フィアット自動車化師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+
+	}
+
+	focus = {
+		id = ITA_fiat_mass_production
+		icon = GFX_focus_generic_truck
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ITA_fiat_motorization
+		prerequisite = {
+			focus = ITA_fiat_motorization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ITA_fiat_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"フィアット自動車化師団\" division_template = \"フィアット自動車化師団\" start_experience_factor = 0.3"
+						owner = ITA
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+}

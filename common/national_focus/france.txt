@@ -1,0 +1,450 @@
+﻿focus_tree = {
+	id = french_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	initial_show_position = {
+		focus = FRA_rearmament
+	}
+	default = no
+
+	# 共通起点: 再軍備
+	focus = {
+		id = FRA_rearmament
+		icon = GFX_focus_SWI_fortify_border_with_france
+		x = 10
+		y = 0
+		cost = 0
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	# 1. 重戦車ルートA (ARL44)
+	focus = {
+		id = FRA_B1_heavy_tank
+		icon = GFX_goal_generic_army_tanks
+		x = -5
+		y = 1
+		cost = 10
+		relative_position_id = FRA_rearmament
+		prerequisite = {
+			focus = FRA_rearmament
+		}
+		mutually_exclusive = {
+			focus = FRA_somua_s35
+			focus = FRA_AMX12t_development
+			focus = FRA_elan_vital
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_B1_heavy_tank_tt
+			hidden_effect = {
+				set_technology = {
+					basic_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_1
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "B1重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"B1重戦車師団\" division_template = \"B1重戦車師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_ARL44_development
+		icon = GFX_focus_generic_army_tanks2
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FRA_B1_heavy_tank
+		prerequisite = {
+			focus = FRA_B1_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = FRA_moving_maginot
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_ARL44_development_tt
+			hidden_effect = {
+				set_technology = {
+					improved_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_2
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "ARL44重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 2 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"ARL44重戦車師団\" division_template = \"ARL44重戦車師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 2. 重戦車ルートB (動くマジノ線)
+	focus = {
+		id = FRA_moving_maginot
+		icon = GFX_focus_BEL_better_than_maginot
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = FRA_B1_heavy_tank
+		prerequisite = {
+			focus = FRA_B1_heavy_tank
+		}
+		mutually_exclusive = {
+			focus = FRA_ARL44_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_moving_maginot_tt
+			hidden_effect = {
+				division_template = {
+					name = "動くマジノ線師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						anti_tank = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+						maintenance_company = { x = 0 y = 4 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"動くマジノ線師団\" division_template = \"動くマジノ線師団\" start_experience_factor = 0.4"
+						owner = FRA
+						count = 20
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 3. 中戦車ルート (ソミュアS35)
+	focus = {
+		id = FRA_somua_s35
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -3
+		y = 1
+		cost = 10
+		relative_position_id = FRA_rearmament
+		prerequisite = {
+			focus = FRA_rearmament
+		}
+		mutually_exclusive = {
+			focus = FRA_B1_heavy_tank
+			focus = FRA_AMX12t_development
+			focus = FRA_elan_vital
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_somua_s35_tt
+			hidden_effect = {
+				set_technology = {
+					improved_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_1
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "ソミュアS35騎兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"ソミュアS35騎兵師団\" division_template = \"ソミュアS35騎兵師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_somua_mass_production
+		icon = GFX_focus_generic_naval_invasion_tank
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FRA_somua_s35
+		prerequisite = {
+			focus = FRA_somua_s35
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_somua_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"ソミュアS35騎兵師団\" division_template = \"ソミュアS35騎兵師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 4. 軽戦車ルート (AMX 12t)
+	focus = {
+		id = FRA_AMX12t_development
+		icon = GFX_focus_research2
+		x = -1
+		y = 1
+		cost = 10
+		relative_position_id = FRA_rearmament
+		prerequisite = {
+			focus = FRA_rearmament
+		}
+		mutually_exclusive = {
+			focus = FRA_B1_heavy_tank
+			focus = FRA_somua_s35
+			focus = FRA_elan_vital
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_AMX12t_development_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_3
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "AMX12t軽機甲師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 2 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"AMX12t軽機甲師団\" division_template = \"AMX12t軽機甲師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 6
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_AMX_mass_production
+		icon = GFX_focus_generic_mass_production
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FRA_AMX12t_development
+		prerequisite = {
+			focus = FRA_AMX12t_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_AMX_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"AMX12t軽機甲師団\" division_template = \"AMX12t軽機甲師団\" start_experience_factor = 0.3"
+						owner = FRA
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 5. 歩兵ルート (エラン＝ヴィタール)
+	focus = {
+		id = FRA_elan_vital
+		icon = GFX_focus_fra_le_deluge
+		x = 1
+		y = 1
+		cost = 10
+		relative_position_id = FRA_rearmament
+		prerequisite = {
+			focus = FRA_rearmament
+		}
+		mutually_exclusive = {
+			focus = FRA_B1_heavy_tank
+			focus = FRA_somua_s35
+			focus = FRA_AMX12t_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_elan_vital_tt
+			hidden_effect = {
+				set_technology = {
+					infantry_weapons2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_2
+					}
+					requested_factories = 30
+					progress = 1
+					amount = 30
+				}
+				division_template = {
+					name = "エラン＝ヴィタール突撃師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"エラン＝ヴィタール突撃師団\" division_template = \"エラン＝ヴィタール突撃師団\" start_experience_factor = 0.5"
+						owner = FRA
+						count = 16
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = FRA_infantry_mass_assault
+		icon = GFX_focus_PER_stage_mass_protests
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = FRA_elan_vital
+		prerequisite = {
+			focus = FRA_elan_vital
+		}
+		completion_reward = {
+			custom_effect_tooltip = FRA_infantry_mass_assault_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"エラン＝ヴィタール突撃師団\" division_template = \"エラン＝ヴィタール突撃師団\" start_experience_factor = 0.5"
+						owner = FRA
+						count = 20
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+}

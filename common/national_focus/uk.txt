@@ -1,0 +1,422 @@
+focus_tree = {
+	id = british_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	initial_show_position = {
+		focus = ENG_rearmament
+	}
+	default = no
+
+	# 共通起点: 再軍備
+	focus = {
+		id = ENG_rearmament
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = 10
+		y = 0
+		cost = 0
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+
+	# 1. 軽戦車ルート (マチルダ -> バレンタイン)
+	focus = {
+		id = ENG_matilda_development
+		icon = GFX_focus_eng_tank_production
+		x = -4
+		y = 1
+		cost = 10
+		relative_position_id = ENG_rearmament
+		prerequisite = {
+			focus = ENG_rearmament
+		}
+		mutually_exclusive = {
+			focus = ENG_churchill_development
+			focus = ENG_cromwell_development
+			focus = ENG_infantry_modernization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_matilda_development_tt
+			hidden_effect = {
+				set_technology = {
+					improved_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_2
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "マチルダ歩兵戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 2 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"マチルダ歩兵戦車師団\" division_template = \"マチルダ歩兵戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_valentine_development
+		icon = GFX_focus_hol_united_netherlands
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_matilda_development
+		prerequisite = {
+			focus = ENG_matilda_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_valentine_development_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_light_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = light_tank_equipment_3
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "バレンタイン歩兵戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						light_armor = { x = 0 y = 0 }
+						light_armor = { x = 1 y = 0 }
+						light_armor = { x = 2 y = 0 }
+						light_armor = { x = 0 y = 1 }
+						light_armor = { x = 1 y = 1 }
+						light_armor = { x = 2 y = 1 }
+						motorized = { x = 0 y = 2 }
+						motorized = { x = 1 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+						mot_recon = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"バレンタイン歩兵戦車師団\" division_template = \"バレンタイン歩兵戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 12
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 2. 重戦車ルート (チャーチル)
+	focus = {
+		id = ENG_churchill_development
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = -2
+		y = 1
+		cost = 10
+		relative_position_id = ENG_rearmament
+		prerequisite = {
+			focus = ENG_rearmament
+		}
+		mutually_exclusive = {
+			focus = ENG_matilda_development
+			focus = ENG_cromwell_development
+			focus = ENG_infantry_modernization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_churchill_development_tt
+			hidden_effect = {
+				set_technology = {
+					improved_heavy_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_2
+					}
+					requested_factories = 15
+					progress = 1
+					amount = 15
+				}
+				division_template = {
+					name = "チャーチル重戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						maintenance_company = { x = 0 y = 1 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"チャーチル重戦車師団\" division_template = \"チャーチル重戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 4
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_churchill_mass_production
+		icon = GFX_focus_eng_the_kings_party
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_churchill_development
+		prerequisite = {
+			focus = ENG_churchill_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_churchill_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"チャーチル重戦車師団\" division_template = \"チャーチル重戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 3. 中戦車ルート (クロムウェル)
+	focus = {
+		id = ENG_cromwell_development
+		icon = GFX_focus_eng_cromwell_tank
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_rearmament
+		prerequisite = {
+			focus = ENG_rearmament
+		}
+		mutually_exclusive = {
+			focus = ENG_matilda_development
+			focus = ENG_churchill_development
+			focus = ENG_infantry_modernization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_cromwell_development_tt
+			hidden_effect = {
+				set_technology = {
+					improved_medium_tank = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = medium_tank_equipment_1
+					}
+					requested_factories = 20
+					progress = 1
+					amount = 20
+				}
+				division_template = {
+					name = "クロムウェル巡航戦車師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 2 y = 0 }
+						motorized = { x = 0 y = 1 }
+						motorized = { x = 1 y = 1 }
+						motorized = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						mot_recon = { x = 0 y = 1 }
+						maintenance_company = { x = 0 y = 2 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"クロムウェル巡航戦車師団\" division_template = \"クロムウェル巡航戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 8
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_cromwell_mass_production
+		icon = GFX_focus_generic_mass_production
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_cromwell_development
+		prerequisite = {
+			focus = ENG_cromwell_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_cromwell_mass_production_tt
+			hidden_effect = {
+				capital_scope = {
+					create_unit = {
+						division = "name = \"クロムウェル巡航戦車師団\" division_template = \"クロムウェル巡航戦車師団\" start_experience_factor = 0.3"
+						owner = ENG
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	# 4. 特殊部隊ルート (高級歩兵 -> SAS/ロイヤルマリーン)
+	focus = {
+		id = ENG_infantry_modernization
+		icon = GFX_focus_eng_chiefs_of_staff_committee
+		x = 2
+		y = 1
+		cost = 10
+		relative_position_id = ENG_rearmament
+		prerequisite = {
+			focus = ENG_rearmament
+		}
+		mutually_exclusive = {
+			focus = ENG_matilda_development
+			focus = ENG_churchill_development
+			focus = ENG_cromwell_development
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_infantry_modernization_tt
+			hidden_effect = {
+				set_technology = {
+					advanced_infantry_weapons2 = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = infantry_equipment_3
+					}
+					requested_factories = 30
+					progress = 1
+					amount = 30
+				}
+				division_template = {
+					name = "精鋭王立歩兵師団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 2 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"精鋭王立歩兵師団\" division_template = \"精鋭王立歩兵師団\" start_experience_factor = 0.4"
+						owner = ENG
+						count = 16
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ENG_special_air_service
+		icon = GFX_focus_eng_special_air_service
+		x = 0
+		y = 1
+		cost = 10
+		relative_position_id = ENG_infantry_modernization
+		prerequisite = {
+			focus = ENG_infantry_modernization
+		}
+		completion_reward = {
+			custom_effect_tooltip = ENG_special_air_service_tt
+			hidden_effect = {
+				set_technology = {
+					paratroopers = 1
+					marines = 1
+				}
+				division_template = {
+					name = "SAS・ロイヤルマリーン混成旅団"
+					is_locked = no
+					priority = 1
+					regiments = {
+						paratrooper = { x = 0 y = 0 }
+						paratrooper = { x = 1 y = 0 }
+						paratrooper = { x = 2 y = 0 }
+						marine = { x = 0 y = 1 }
+						marine = { x = 1 y = 1 }
+						marine = { x = 2 y = 1 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						recon = { x = 0 y = 1 }
+						logistics_company = { x = 0 y = 2 }
+						field_hospital = { x = 0 y = 3 }
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"SAS・ロイヤルマリーン混成旅団\" division_template = \"SAS・ロイヤルマリーン混成旅団\" start_experience_factor = 0.6"
+						owner = ENG
+						count = 10
+						allow_spawning_on_enemy_provs = no
+					}
+				}
+			}
+		}
+	}
+}
